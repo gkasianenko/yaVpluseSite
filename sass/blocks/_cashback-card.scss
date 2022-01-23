@@ -1,0 +1,37 @@
+.cashback-card {
+  display: flex;
+  align-items: center;
+
+  background-color: #fff;
+  border-radius: 24px;
+}
+
+.cashback-card:nth-child(even) {
+  flex-direction: row-reverse;
+  
+
+  
+}
+
+.cashback-card__info {
+  width: 45%;
+  margin-left: 73px;
+
+  & p {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -0.016em;
+  }
+
+  & .title-h3 {
+    color: $h3color;
+  }
+
+}
+
+.cashback-card__info > * + * {
+  margin-top: 12px;
+}

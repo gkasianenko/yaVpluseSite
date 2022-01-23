@@ -1,0 +1,39 @@
+.header-nav {
+  padding-top: 37px;
+  padding-bottom: 37px;
+}
+
+.header-nav__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav__left {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  min-width: 579px;
+}
+
+.header-nav__right {
+  display: flex;
+  justify-content: flex-end;
+  width: 30%;
+}
+
+.header-nav__left > * + * {
+  margin-left: 56px;
+}
+
+.header-nav__menu > * + * {
+  margin-left: 24px;
+}
+
+.header-nav__buttons {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav__buttons > * + * {
+  margin-left: 19px;
+}

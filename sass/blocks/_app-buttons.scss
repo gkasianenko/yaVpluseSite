@@ -1,0 +1,15 @@
+.app-buttons__row svg {
+  cursor: pointer;
+  rect {
+    transition: fill 0.2s ease-out;
+  }
+
+  &:hover {
+    rect {
+      fill: rgba(255, 255, 255, 0.8);
+    }
+  }
+}
+.app-buttons__row > * + * {
+  margin-left: 20px;
+}

@@ -1,0 +1,17 @@
+.cashback {
+  padding-top: 104px;
+  padding-bottom: 104px;
+
+  & .title-h1{
+      width: 613px;
+  }
+}
+
+
+.cashback-cards__wrapper {
+  margin-top: 48px;
+}
+
+.cashback-cards__wrapper > * + * {
+  margin-top: 104px;
+}
