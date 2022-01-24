@@ -1,11 +1,20 @@
 .header-nav {
   padding-top: 37px;
   padding-bottom: 37px;
+
+  @media (max-width: $mobile){
+    padding-top: 19px;
+    padding-bottom: 67px;
+  }
 }
 
 .header-nav__wrapper {
   display: flex;
   align-items: center;
+  
+  @media (max-width: $mobile){
+    justify-content: space-between;
+  }
 }
 
 .header-nav__left {
@@ -13,16 +22,32 @@
   align-items: center;
   width: 70%;
   min-width: 579px;
+
+  @media (max-width: $mobile){
+    min-width: unset;
+  }
+
+  
 }
 
 .header-nav__right {
   display: flex;
   justify-content: flex-end;
   width: 30%;
+
+  @media (max-width: $mobile) {
+    display: none;
+  }
 }
 
 .header-nav__left > * + * {
   margin-left: 56px;
+}
+
+.header-nav__menu{
+  @media (max-width: $mobile) {
+    display: none;
+  }
 }
 
 .header-nav__menu > * + * {

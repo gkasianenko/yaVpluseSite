@@ -98,10 +98,8 @@
 .learn-more-pattern__row-three .learn-more-pattern__block:nth-child(1) {
   padding-top: 104px;
   padding-bottom: 104px;
-  background-color: #1D1D1D;
+  background-color: #1d1d1d;
   border-bottom-left-radius: 24px;
-
-
 
   & .learn-more-pattern__block-info {
     max-width: 515px;
@@ -113,17 +111,18 @@
 }
 
 .learn-more-pattern__row-three .learn-more-pattern__block:nth-child(2) {
-  background-color: #1D1D1D;
+  background-color: #1d1d1d;
   border-bottom-right-radius: 24px;
   padding-top: 0;
   padding-bottom: 0;
+
+  background-image: url(../../img/section-learn-more/bg-screens.jpg);
 
   & img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-
 
   & .learn-more-pattern__block-info {
     max-width: 515px;
@@ -133,5 +132,3 @@
     padding-top: 56px;
   }
 }
-
-

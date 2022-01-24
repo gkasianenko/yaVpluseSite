@@ -34,6 +34,9 @@ body.noscroll {
   max-height: 500px;
   transition: max-height 0.5s ease-in; }
 
+.mobile-menu.active {
+  transform: translateX(0); }
+
 .rotate {
   transform: rotate(180deg); }
 
@@ -136,11 +139,17 @@ legend {
 .header-title__wrapper {
   display: flex;
   justify-content: flex-end; }
+  @media (max-width: 1155px) {
+    .header-title__wrapper {
+      flex-direction: column; } }
 
 .header-title__title {
   display: flex;
   flex-direction: column;
   width: 455px; }
+  @media (max-width: 1155px) {
+    .header-title__title {
+      width: auto; } }
 
 .header-title__left {
   display: flex;
@@ -156,6 +165,16 @@ legend {
     font-size: 20px;
     width: 260px;
     margin-bottom: 56px; }
+    @media (max-width: 1155px) {
+      .header-title__left p {
+        margin-bottom: 39px; } }
+  @media (max-width: 1155px) {
+    .header-title__left {
+      min-width: 360px;
+      padding-left: 30px;
+      padding-right: 30px; }
+      .header-title__left .title-h1 {
+        font-size: 36px; } }
 
 .header-title__buttons {
   display: flex; }
@@ -169,6 +188,9 @@ legend {
 
 .header-title__buttons > * + * {
   margin-left: 29px; }
+  @media (max-width: 1155px) {
+    .header-title__buttons > * + * {
+      margin-left: 13px; } }
 
 .header-title__right {
   display: flex;
@@ -177,6 +199,22 @@ legend {
   min-width: 500px;
   width: 59.5%;
   background-color: #2b64f8; }
+  @media (max-width: 1155px) {
+    .header-title__right {
+      min-width: unset;
+      width: auto; } }
+
+.header-title__right img:nth-child(1) {
+  display: block; }
+  @media (max-width: 1155px) {
+    .header-title__right img:nth-child(1) {
+      display: none; } }
+
+.header-title__right img:nth-child(2) {
+  display: none; }
+  @media (max-width: 1155px) {
+    .header-title__right img:nth-child(2) {
+      display: block; } }
 
 .header-title__right img {
   padding-left: 30px;
@@ -474,24 +512,41 @@ legend {
 .header-nav {
   padding-top: 37px;
   padding-bottom: 37px; }
+  @media (max-width: 1155px) {
+    .header-nav {
+      padding-top: 19px;
+      padding-bottom: 67px; } }
 
 .header-nav__wrapper {
   display: flex;
   align-items: center; }
+  @media (max-width: 1155px) {
+    .header-nav__wrapper {
+      justify-content: space-between; } }
 
 .header-nav__left {
   display: flex;
   align-items: center;
   width: 70%;
   min-width: 579px; }
+  @media (max-width: 1155px) {
+    .header-nav__left {
+      min-width: unset; } }
 
 .header-nav__right {
   display: flex;
   justify-content: flex-end;
   width: 30%; }
+  @media (max-width: 1155px) {
+    .header-nav__right {
+      display: none; } }
 
 .header-nav__left > * + * {
   margin-left: 56px; }
+
+@media (max-width: 1155px) {
+  .header-nav__menu {
+    display: none; } }
 
 .header-nav__menu > * + * {
   margin-left: 24px; }
@@ -643,7 +698,7 @@ legend {
 .learn-more-pattern__row-three .learn-more-pattern__block:nth-child(1) {
   padding-top: 104px;
   padding-bottom: 104px;
-  background-color: #1D1D1D;
+  background-color: #1d1d1d;
   border-bottom-left-radius: 24px; }
   .learn-more-pattern__row-three .learn-more-pattern__block:nth-child(1) .learn-more-pattern__block-info {
     max-width: 515px; }
@@ -651,10 +706,11 @@ legend {
     padding-top: 56px; }
 
 .learn-more-pattern__row-three .learn-more-pattern__block:nth-child(2) {
-  background-color: #1D1D1D;
+  background-color: #1d1d1d;
   border-bottom-right-radius: 24px;
   padding-top: 0;
-  padding-bottom: 0; }
+  padding-bottom: 0;
+  background-image: url(../../img/section-learn-more/bg-screens.jpg); }
   .learn-more-pattern__row-three .learn-more-pattern__block:nth-child(2) img {
     width: 100%;
     height: 100%;
@@ -711,6 +767,99 @@ legend {
 .svg-plus {
   cursor: pointer; }
 
+.mobile-menu {
+  padding-top: 19px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  max-width: 360px;
+  z-index: 5;
+  transition: transform 0.5s;
+  transform: translateX(100%); }
+
+.mobile-link {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: black;
+  font-size: 20px;
+  line-height: 1.25rem;
+  transition: 0.2s ease-out; }
+  .mobile-link:hover {
+    color: rgba(0, 0, 0, 0.6); }
+  .mobile-link:not(:last-child) {
+    margin-bottom: 15px; }
+
+.mobile-menu__logo {
+  margin-bottom: 43px; }
+
+.mobile-menu__nav {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 45px;
+  font-size: 20px; }
+
+.mobile-menu__nav > * + * {
+  margin-top: 20px; }
+
+.mobile-menu .socials svg path {
+  fill: rgba(0, 0, 0, 0.9); }
+.mobile-menu .socials svg:hover path {
+  fill: rgba(0, 0, 0, 0.6); }
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px; }
+  .socials svg path {
+    transition: fill 0.2s ease-out; }
+  .socials svg:hover path {
+    fill: rgba(255, 255, 255, 0.6); }
+
+.toggle-menu {
+  display: none;
+  justify-content: flex-end;
+  width: 48px;
+  height: 48px;
+  padding-bottom: 10px;
+  padding-top: 10px; }
+  @media (max-width: 1155px) {
+    .toggle-menu {
+      display: flex; } }
+
+.toggle-menu__gamburger {
+  width: 28px;
+  height: 20px; }
+
+.toggle-menu span {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 3px;
+  border-radius: 24px;
+  background-color: #000000;
+  transition: 0.5s; }
+
+.toggle-menu span:before,
+.toggle-menu span:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #000000;
+  transition: 0.5s; }
+
+.toggle-menu span::before {
+  top: -7px; }
+
+.toggle-menu span::after {
+  bottom: -7px; }
+
 .title {
   font-family: Montserrat, sans-serif;
   font-style: normal;
@@ -727,6 +876,10 @@ legend {
   font-weight: 600;
   line-height: 63px;
   letter-spacing: -0.016em; }
+  @media (max-width: 1155px) {
+    .title-h1 {
+      font-size: 32px;
+      line-height: 42px; } }
 
 .title-h3 {
   font-family: Montserrat, sans-serif;
@@ -746,6 +899,11 @@ legend {
 /* Mobile */
 @media (max-width: 1155px) {
   .container {
+    width: 360px;
+    padding-left: 30px;
+    padding-right: 30px; } }
+@media (max-width: 1155px) {
+  .extended-container {
     width: 360px; } }
 
 /*# sourceMappingURL=main.css.map */

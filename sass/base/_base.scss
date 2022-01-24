@@ -36,6 +36,10 @@ body.noscroll {
   transition: max-height 0.5s ease-in;
 }
 
+.mobile-menu.active {
+  transform: translateX(0);
+}
+
 .rotate{
   transform: rotate(180deg);
 }
