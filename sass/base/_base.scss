@@ -16,7 +16,7 @@ body {
   margin: 0;
   font-family: "Inter", sans-serif;
   color: #000000;
-  background-color: #F2F2F4;
+  background-color: #f2f2f4;
 }
 
 body > * {
@@ -27,11 +27,11 @@ body.noscroll {
   overflow: hidden;
 }
 
-.hidden{
+.hidden {
   display: none;
 }
 
-.list-content.active{
+.list-content.active {
   max-height: 500px;
   transition: max-height 0.5s ease-in;
 }
@@ -40,7 +40,7 @@ body.noscroll {
   transform: translateX(0);
 }
 
-.rotate{
+.rotate {
   transform: rotate(180deg);
 }
 
@@ -96,12 +96,12 @@ img {
   height: auto;
 }
 
-.svg-plus.active{
+.svg-plus.active {
   transform: rotate(45deg);
 
-   path{
-     stroke: #B2B2B4;
-   }
+  path {
+    stroke: #b2b2b4;
+  }
 }
 
 ul {
@@ -137,13 +137,12 @@ legend {
   padding-right: 15px;
 }
 
-.extended-container{
+.extended-container {
   max-width: 1440px;
   margin: 0 auto;
-
 }
 
-.extended-container--no-padding{
+.extended-container--no-padding {
   padding-left: 0px;
   padding-right: 0px;
 }
@@ -152,6 +151,21 @@ legend {
 
 .none {
   display: none !important;
+}
+
+#overlay.active {
+  display: block;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 4;
+  display: none;
 }
 
 /* Sticky Footer */
