@@ -2,6 +2,23 @@
   padding: 32px 37px 20px 32px;
   border-radius: 24px;
   background: #fff;
+
+  svg {
+    flex-shrink: 0;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 24px 24px 15px 24px;
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+
+    h3 {
+      width: 200px;
+      line-height: 1.35;
+    }
+  }
 }
 
 .list-group > * + * {
@@ -25,6 +42,21 @@
   & h3 {
     font-size: 24px;
   }
+
+  br {
+    display: none;
+  }
+
+  @media (max-width: $mobile) {
+    align-items: flex-start;
+    h3 {
+      font-size: 20px;
+    }
+
+    br {
+      display: block;
+    }
+  }
 }
 
 .list-content {
@@ -35,6 +67,15 @@
   transition: max-height 0.3s ease-out;
   max-height: 0;
   overflow: hidden;
+
+  @media (max-width: $mobile) {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.35;
+    letter-spacing: -0.016em;
+  }
 }
 
 .list-content > * + * {

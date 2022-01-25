@@ -5,6 +5,22 @@
   & .title-h1{
       width: 613px;
   }
+
+  @media (max-width: $mobile){
+    padding-top: 0;
+    padding-bottom: 48px;
+
+    & .title-h1{
+      width: 300px;
+      padding-left: 30px;
+  }
+  }
+}
+
+.cashback .container{
+  padding-left: 0;
+  padding-right: 0;
+
 }
 
 
@@ -14,4 +30,8 @@
 
 .cashback-cards__wrapper > * + * {
   margin-top: 104px;
+
+  @media (max-width: $mobile){
+    margin-top: 24px;
+  }
 }

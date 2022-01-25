@@ -45,6 +45,7 @@
     min-width: 360px;
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 90px;
 
     .title-h1 {
       font-size: 36px;
@@ -88,6 +89,9 @@
   @media (max-width: $mobile) {
     min-width: unset;
     width: auto;
+    padding-top: 0;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
   }
 }
 
@@ -104,6 +108,7 @@
 
   @media (max-width: $mobile) {
     display: block;
+    margin-top: -33px;
   }
 }
 

@@ -5,11 +5,33 @@
   & h2 {
     margin-bottom: 48px;
   }
+
+  @media (max-width: $mobile) {
+    padding-top: 48px;
+    padding-bottom: 48px;
+
+    h2 {
+      width: 250px;
+      margin-bottom: 32px;
+      padding-left: 30px;
+    }
+  }
+}
+
+.how-it-works .container {
+  @media (max-width: $mobile) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .how-it-works__card-wrapper {
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: $mobile) {
+    flex-direction: column;
+  }
 }
 
 .how-it-works__card {
@@ -39,19 +61,57 @@
     font-size: 20px;
     line-height: 1.35;
     opacity: 0.9;
+
+    br {
+      display: none;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 18px;
+
+      br {
+        display: block;
+      }
+    }
+  }
+
+  @media (max-width: $mobile) {
+    width: auto;
   }
 }
 
 .how-it-works__card:nth-child(1) {
   background-image: url(../img/section-how-it-works/bg-map.png);
+
+  @media (max-width: $mobile) {
+    p {
+      width: 294px;
+    }
+  }
 }
 
 .how-it-works__card:nth-child(2) {
   background-image: url(../img/section-how-it-works/bg-scan.png);
+
+  @media (max-width: $mobile) {
+    background-image: url(../../img/section-how-it-works/xs-bg-scan.jpg);
+    margin-top: -38px;
+    padding-top: 320px;
+    padding-bottom: 72px;
+  }
 }
 
 .how-it-works__card:nth-child(3) {
   background-image: url(../img/section-how-it-works/bg-cards.png);
+
+  @media (max-width: $mobile) {
+    background-image: url(../../img/section-how-it-works/xs-bg-cards.jpg);
+    padding-top: 363px;
+    margin-top: -40px;
+
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
 }
 
 .how-it-works__card > * + * {

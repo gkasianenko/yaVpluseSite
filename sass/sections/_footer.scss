@@ -20,19 +20,39 @@
       color: rgba(255, 255, 255, 0.6);
     }
   }
+
+  @media (max-width: $mobile){
+    background-color: #f2f2f4;
+    .container{
+      background-color: #1d1d1d;
+    }
+  }
 }
 
 .footer__widgets-wrapper {
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: $mobile) {
+    flex-direction: column-reverse;
+  }
 }
 
 .footer__left {
   display: flex;
+
+  @media (max-width: $mobile) {
+    flex-direction: column-reverse;
+  }
 }
 
 .footer__left > * + * {
   margin-left: 36px;
+
+
+  @media (max-width: $mobile){
+    margin-left: 0;
+  }
 }
 
 .footer__desc {
@@ -74,6 +94,10 @@
   flex-direction: column;
 
   padding-top: 68px;
+
+  @media (max-width: $mobile){
+    padding-top: 40px;
+  }
 }
 
 .footer__links > * + * {
@@ -83,6 +107,16 @@
 .footer__downloads {
   display: flex;
   align-items: flex-end;
+}
+
+.footer__creds{
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: $mobile){
+    margin-top: 32px;
+    flex-direction: column-reverse;
+  }
 }
 
 .footer__logo {
@@ -100,6 +134,10 @@
     font-weight: 400;
     line-height: 1.35;
     color: rgba(255, 255, 255, 1);
+  }
+
+  @media (max-width: $mobile){
+    margin-top: 32px;
   }
 }
 
@@ -153,6 +191,12 @@
 
 .footer__contacts {
   margin-bottom: 32px;
+
+  @media (max-width: $mobile){
+    li{
+      font-size: 16px;
+    }
+  }
 }
 
 .footer__contacts a {
@@ -175,6 +219,10 @@
   padding-top: 24px;
   margin-top: 24px;
   border-top: 1px solid rgba(255, 255, 255, 1);
+
+  @media (max-width: $mobile){
+    margin-top: 0;
+  }
 }
 
 .footer__copyright {
@@ -197,6 +245,10 @@
   & span {
     color: rgba(255, 255, 255, 1);
   }
+
+  @media (max-width: $mobile){
+    flex-direction: column;
+  }
 }
 
 .footer__copyright > * + * {
@@ -216,4 +268,25 @@
 .footer__copyright-right {
   display: flex;
   width: 70%;
+}
+
+.footer .app-buttons{
+  @media (max-width: $mobile){
+
+    svg:nth-child(1){
+      width: 135px;
+      height: 46px;
+    }
+
+    svg:nth-child(2){
+      width: 148px;
+      height: 46px;
+    }
+  }
+}
+
+.footer .app-buttons p {
+  @media (max-width: $mobile) {
+    width: 175px;
+  }
 }

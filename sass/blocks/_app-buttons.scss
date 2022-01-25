@@ -12,4 +12,10 @@
 }
 .app-buttons__row > * + * {
   margin-left: 20px;
+
+  @media (max-width: $mobile){
+    margin-left: 13px;
+  }
 }
+
+
