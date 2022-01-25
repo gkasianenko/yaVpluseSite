@@ -441,7 +441,7 @@ legend {
   background-image: url(../img/section-how-it-works/bg-scan.png); }
   @media (max-width: 1155px) {
     .how-it-works__card:nth-child(2) {
-      background-image: url(../../img/section-how-it-works/xs-bg-scan.jpg);
+      background-image: url(../img/section-how-it-works/xs-bg-scan.jpg);
       margin-top: -38px;
       padding-top: 320px;
       padding-bottom: 72px; } }
@@ -450,7 +450,7 @@ legend {
   background-image: url(../img/section-how-it-works/bg-cards.png); }
   @media (max-width: 1155px) {
     .how-it-works__card:nth-child(3) {
-      background-image: url(../../img/section-how-it-works/xs-bg-cards.jpg);
+      background-image: url(../img/section-how-it-works/xs-bg-cards.jpg);
       padding-top: 363px;
       margin-top: -40px;
       border-bottom-right-radius: 0;
@@ -1077,7 +1077,7 @@ legend {
   border-bottom-right-radius: 24px;
   padding-top: 0;
   padding-bottom: 0;
-  background-image: url(../../img/section-learn-more/bg-screens.jpg); }
+  background-image: url(../img/section-learn-more/bg-screens.jpg); }
   .learn-more-pattern__row-three .learn-more-pattern__block:nth-child(2) img {
     position: static;
     width: 100%;
