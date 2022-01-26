@@ -549,6 +549,7 @@ legend {
       color: rgba(255, 255, 255, 0.6); }
   @media (max-width: 1155px) {
     .footer {
+      padding-top: 0;
       background-color: #f2f2f4; }
       .footer .container {
         background-color: #1d1d1d; } }
