@@ -35,6 +35,7 @@
     font-size: 20px;
     width: 260px;
     margin-bottom: 56px;
+    line-height: 1.35;
 
     @media (max-width: $mobile) {
       margin-bottom: 39px;
@@ -95,7 +96,6 @@
   }
 }
 
-
 .header-title__right img:nth-child(1) {
   display: block;
   @media (max-width: $mobile) {
@@ -115,4 +115,18 @@
 .header-title__right img {
   padding-left: 30px;
   padding-right: 30px;
+}
+
+.partners .header-title__left p {
+  margin-bottom: 40px;
+}
+
+.partners .header-title__right {
+  background-color: unset;
+  padding: 0;
+}
+
+.partners .header-title__right img {
+  padding: 0;
+  width: 100%;
 }
