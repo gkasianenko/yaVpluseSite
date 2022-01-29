@@ -1,17 +1,12 @@
 .faq {
-  padding-top: 96px;
-  padding-bottom: 72px;
-  z-index: 2;
-
+  padding-bottom: 104px;
   & h2 {
     margin-bottom: 56px;
   }
 
-  @media (max-width: $mobile){
+  @media (max-width: $mobile) {
     padding-top: 0;
     padding-bottom: 48px;
-    border-bottom-left-radius: 32px;
-    border-bottom-right-radius: 32px;
 
     & h2 {
       margin-bottom: 31px;

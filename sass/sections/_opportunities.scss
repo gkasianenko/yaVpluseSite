@@ -1,0 +1,73 @@
+.opportunities {
+  h2 {
+    color: #fff;
+    margin-bottom: 48px;
+  }
+}
+
+.opportunities__content {
+  padding: 104px 120px;
+  background-color: #2b64f8;
+}
+
+.opportunities__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.opportunities__wrapper > * + * {
+  margin-top: 38px;
+}
+
+.opportunities__top {
+  display: flex;
+}
+
+.opportunities__top > * + * {
+  margin-left: 38px;
+}
+
+.opportunities__bottom {
+  display: flex;
+}
+
+.opportunities__bottom > * + * {
+  margin-left: 38px;
+}
+
+.opportunities__element {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 48.5%;
+  min-height: 185px;
+  padding: 32px;
+
+  background-color: #fff;
+  border-radius: 24px;
+
+  & svg {
+    flex-shrink: 0;
+    max-width: unset;
+  }
+
+  & p {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 1.2;
+
+    letter-spacing: -0.016em;
+
+    color: #000000;
+  }
+}
+
+.opportunities__text {
+  max-width: 391px;
+}
+
+.opportunities__icon {
+  margin-left: 15px;
+}
