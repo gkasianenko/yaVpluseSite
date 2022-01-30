@@ -23,3 +23,14 @@ function toggleMobMenu(){
     overlay.classList.toggle("active");
     document.body.classList.toggle("noscroll");
 }
+
+var swiper = new Swiper(".mySwiper", {
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });

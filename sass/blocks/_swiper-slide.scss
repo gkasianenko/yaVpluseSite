@@ -1,0 +1,39 @@
+.swiper-slide {
+    flex-shrink: 0;
+  width: 832px;
+  height: 480px;
+
+  padding-top: 172px;
+  padding-left: 424px;
+  padding-right: 88px;
+
+  border-radius: 32px;
+
+  color: #fff;
+
+  p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.2;
+
+    letter-spacing: -0.016em;
+  }
+
+  
+}
+
+.swiper-slide > * + *{
+    margin-top: 16px;
+}
+
+.swiper-slide:nth-child(1) {
+  background-image: url(../img/swiper-section/bg-photo.png);
+}
+.swiper-slide:nth-child(2) {
+  background-image: url(../img/swiper-section/bg-telegram.png);
+}
+.swiper-slide:nth-child(3) {
+  background-image: url(../img/swiper-section/bg-type.png);
+}

@@ -1,0 +1,51 @@
+.manufacturers-benefits__content {
+  padding: 104px 120px 137px 120px;
+
+  background-color: #1d1d1d;
+
+  h2 {
+    color: #fff;
+    width: 767px;
+
+    margin-bottom: 48px;
+  }
+
+  p {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 1.35;
+  }
+}
+
+.manufacturers-benefits__row {
+  display: flex;
+}
+
+.manufacturers-benefits__row > * + * {
+  margin-left: 38px;
+}
+
+.manufacturers-benefits__element {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 32px 0 32px;
+  background-color: #fff;
+  border-radius: 24px;
+
+  width: 48.4%;
+  height: 185px;
+
+  svg {
+    flex-shrink: 0;
+  }
+}
+
+.manufacturers-benefits__text {
+  width: 343px;
+}
+
+.manufacturers-benefits__text > * + * {
+  margin-top: 8px;
+}

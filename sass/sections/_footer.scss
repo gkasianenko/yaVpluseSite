@@ -376,4 +376,14 @@
 
 .partners .footer__content {
   padding-top: 118px;
+
+  @media (max-width: $mobile){
+    padding-top: 78px;
+  }
+}
+
+.partners .footer__right{
+  @media (max-width: $mobile){
+    padding-top: 0;
+  }
 }

@@ -1,27 +1,32 @@
 .cashback {
-  padding-top: 104px;
+  position: relative;
   padding-bottom: 104px;
+  z-index: 2;
 
   & .title-h1{
       width: 613px;
+      
   }
 
   @media (max-width: $mobile){
-    padding-top: 0;
-    padding-bottom: 48px;
+    padding-top: 48px;
+    padding-bottom: 0;
+
+    & .container{
+      padding-left: 0;
+      padding-right: 0;
+    }
 
     & .title-h1{
-      width: 300px;
+      width: auto;
       padding-left: 30px;
+      
   }
+
+    
   }
 }
 
-.cashback .container{
-  padding-left: 0;
-  padding-right: 0;
-
-}
 
 
 .cashback-cards__wrapper {
@@ -36,7 +41,19 @@
   }
 }
 
+.partners .cashback{
+  padding-top: 104px;
+
+  @media (max-width: $mobile){
+    padding-top: 48px;
+  }
+}
+
 
 .partners .cashback .title-h1 {
   width: 675px;
+
+  @media (max-width: $mobile){
+    width: 300px;
+  }
 }

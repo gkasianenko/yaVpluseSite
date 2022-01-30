@@ -8,23 +8,46 @@
 .opportunities__content {
   padding: 104px 120px;
   background-color: #2b64f8;
+
+  overflow: hidden;
+
+  @media (max-width: $mobile) {
+    padding: 83px 32px 57px 32px;
+  }
 }
 
 .opportunities__wrapper {
   display: flex;
   flex-direction: column;
+
+  @media (max-width: $mobile) {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .opportunities__wrapper > * + * {
   margin-top: 38px;
+
+  @media (max-width: $mobile) {
+    margin-top: 0;
+    margin-left: 24px;
+  }
 }
 
 .opportunities__top {
   display: flex;
+
+  @media (max-width: $mobile) {
+  }
 }
 
 .opportunities__top > * + * {
   margin-left: 38px;
+
+  @media (max-width: $mobile) {
+    margin-left: 24px;
+  }
 }
 
 .opportunities__bottom {
@@ -33,6 +56,10 @@
 
 .opportunities__bottom > * + * {
   margin-left: 38px;
+
+  @media (max-width: $mobile) {
+    margin-left: 24px;
+  }
 }
 
 .opportunities__element {
@@ -62,12 +89,78 @@
 
     color: #000000;
   }
+
+  @media (max-width: $mobile) {
+    flex-direction: column-reverse;
+    padding: 24px;
+    width: 280px;
+    height: 232px;
+
+    svg {
+      width: 48px;
+      height: 48px;
+    }
+
+    & .opportunities__text {
+      margin-top: 40px;
+
+      p {
+        font-size: 18px;
+      }
+    }
+  }
 }
 
 .opportunities__text {
   max-width: 391px;
+
+  @media (max-width: $mobile) {
+    width: 198px;
+  }
+}
+
+.opportunities__bottom:nth-child(2) .opportunities__text {
+  @media (max-width: $mobile) {
+    margin-top: 16px;
+    width: auto;
+  }
 }
 
 .opportunities__icon {
   margin-left: 15px;
+
+  @media (max-width: $mobile) {
+    margin-left: 0;
+  }
+}
+
+.opportunities__pagination {
+  margin-top: 28px;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+
+  p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1;
+
+    color: #ffffff;
+  }
+
+  svg {
+    cursor: pointer;
+  }
+
+  @media (max-width: $mobile) {
+    display: flex;
+  }
+}
+
+.opportunities__arrows {
+  display: flex;
+  justify-content: space-between;
+  width: 116px;
 }

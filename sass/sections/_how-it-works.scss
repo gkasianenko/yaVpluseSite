@@ -8,7 +8,7 @@
 
   @media (max-width: $mobile) {
     padding-top: 48px;
-    padding-bottom: 48px;
+    padding-bottom: 0;
 
     h2 {
       width: 250px;
@@ -151,4 +151,16 @@
 
 .partners .how-it-works__card > * + * {
   margin-top: 16px;
+}
+
+.manufacturers .how-it-works__card:nth-child(1) {
+  background-image: url(../img/manufacturers-section-how-it-works/products.png);
+}
+
+.manufacturers .how-it-works__card:nth-child(2) {
+  background-image: url(../img/manufacturers-section-how-it-works/discount.png);
+}
+
+.manufacturers .how-it-works__card:nth-child(3) {
+  background-image: url(../img/manufacturers-section-how-it-works/cart.png);
 }

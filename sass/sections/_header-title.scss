@@ -117,11 +117,10 @@
   padding-right: 30px;
 }
 
-
 .partners .header-title__right img {
   display: block;
 
-  @media (max-width: $mobile){
+  @media (max-width: $mobile) {
     border-top-left-radius: 32px;
     border-top-right-radius: 32px;
   }
@@ -139,4 +138,17 @@
 .partners .header-title__right img {
   padding: 0;
   width: 100%;
+}
+
+.manufacturers .header-title {
+  background-color: #1d1d1d;
+  color: #fff;
+
+  @media (max-width: $mobile) {
+    padding-top: 48px;
+  }
+}
+
+.manufacturers .header-title__left p {
+  width: 345px;
 }

@@ -29,6 +29,8 @@
   transition: 0.5s;
 }
 
+
+
 .toggle-menu span:before,
 .toggle-menu span:after {
   content: "";
@@ -38,6 +40,7 @@
   background-color: #000000;
   transition: 0.5s;
 }
+
 
 .toggle-menu span::before {
   top: -7px;

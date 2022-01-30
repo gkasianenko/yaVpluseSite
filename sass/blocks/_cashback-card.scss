@@ -45,7 +45,7 @@
     height: 216px;
     margin-left: 0;
 
-    padding-top: 48px;
+    padding-top: 33px;
     padding-left: 32px;
     padding-right: 32px;
 
@@ -77,6 +77,27 @@
     padding-top: 25px;
     br {
       display: none;
+    }
+  }
+}
+
+.partners .cashback-card:nth-child(2) .cashback-card__info {
+  span {
+    display: none;
+  }
+  @media (max-width: $mobile) {
+    padding-top: 24px;
+    span {
+      display: inline;
+    }
+  }
+}
+
+.partners .cashback-card:nth-child(3) .cashback-card__info {
+  @media (max-width: $mobile) {
+    padding-top: 40px;
+    p br {
+      display: block;
     }
   }
 }

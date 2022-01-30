@@ -185,7 +185,7 @@
 
 .partners .header-benefits {
   position: relative;
-  margin-top: -25px;
+
   z-index: 2;
 
   font-family: Montserrat;
@@ -195,6 +195,10 @@
   line-height: 1.2;
   letter-spacing: -0.016em;
   color: #ffffff;
+
+  @media (max-width: $mobile) {
+    margin-top: -25px;
+  }
 }
 
 .partners .header-benefits__wrapper {
@@ -237,4 +241,32 @@
   @media (max-width: $mobile) {
     width: auto;
   }
+}
+
+.manufacturers .header-benefits {
+  padding-top: 104px;
+  background: #1d1d1d;
+
+  p {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 1.35;
+  }
+}
+
+.manufacturers .header-benefits__info > * + * {
+  margin-top: 12px;
+}
+
+.manufacturers .header-benefits__right {
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+.manufacturers .header-benefits__desc {
+  padding-top: 56px;
+  padding-left: 0;
+  padding-right: 0;
 }

@@ -1,0 +1,46 @@
+.swiper-section{
+    padding-bottom: 104px;
+    .container {
+        overflow: hidden;
+    }
+}
+
+.swiper-section__header {
+  margin-bottom: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.swiper-wrapper {
+  display: flex;
+  
+}
+
+.swiper-wrapper > * + * {
+  margin-left: 30px;
+}
+
+.swiper__pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 210px;
+
+  svg {
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+}
+
+.swiper-pagination {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1;
+
+  text-align: center;
+
+  color: #000000;
+}
