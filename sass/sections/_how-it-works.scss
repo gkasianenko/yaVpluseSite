@@ -68,6 +68,7 @@
 
     @media (max-width: $mobile) {
       font-size: 18px;
+      
 
       br {
         display: block;
@@ -77,6 +78,7 @@
 
   @media (max-width: $mobile) {
     width: auto;
+    border-radius: 32px;
   }
 }
 
@@ -98,7 +100,7 @@
 
   @media (max-width: $mobile) {
     background-image: url(../img/section-how-it-works/xs-bg-scan.jpg);
-    margin-top: -38px;
+    margin-top: -50px;
     padding-top: 320px;
     padding-bottom: 72px;
     br {
@@ -113,7 +115,7 @@
   @media (max-width: $mobile) {
     background-image: url(../img/section-how-it-works/xs-bg-cards.jpg);
     padding-top: 363px;
-    margin-top: -40px;
+    margin-top: -50px;
 
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
@@ -153,14 +155,34 @@
   margin-top: 16px;
 }
 
+.manufacturers .how-it-works__card {
+  @media (max-width: $mobile) {
+    min-height: 554px;
+  }
+}
+
 .manufacturers .how-it-works__card:nth-child(1) {
   background-image: url(../img/manufacturers-section-how-it-works/products.png);
+
+  @media (max-width: $mobile) {
+    background-image: url(../img/manufacturers-section-how-it-works/xs-products.png);
+  }
 }
 
 .manufacturers .how-it-works__card:nth-child(2) {
   background-image: url(../img/manufacturers-section-how-it-works/discount.png);
+
+  @media (max-width: $mobile) {
+    background-image: url(../img/manufacturers-section-how-it-works/xs-discount.png);
+  }
 }
 
 .manufacturers .how-it-works__card:nth-child(3) {
   background-image: url(../img/manufacturers-section-how-it-works/cart.png);
+
+  @media (max-width: $mobile) {
+    background-image: url(../img/manufacturers-section-how-it-works/xs-cart.png);
+
+    border-radius: 32px;
+  }
 }

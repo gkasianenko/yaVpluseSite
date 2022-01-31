@@ -1,12 +1,34 @@
 .analytics {
-    padding-bottom: 104px;
+  padding-bottom: 104px;
   h2 {
     width: 744px;
     margin-bottom: 56px;
+
+    @media (max-width: $mobile) {
+      width: auto;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    padding-bottom: 48px;
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 }
 
-.analytics__cards-wrapper{
-    display: flex;
-    justify-content: space-between;
+.analytics__cards-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: $mobile) {
+    flex-direction: column;
+    align-items: center;
+
+    & > * + * {
+      margin-top: 24px;
+    }
+  }
 }

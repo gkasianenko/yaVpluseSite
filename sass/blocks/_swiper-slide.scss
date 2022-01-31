@@ -1,5 +1,5 @@
 .swiper-slide {
-    flex-shrink: 0;
+  flex-shrink: 0;
   width: 832px;
   height: 480px;
 
@@ -21,19 +21,58 @@
     letter-spacing: -0.016em;
   }
 
-  
+  @media (max-width: $mobile) {
+    width: 360px;
+    height: 524px;
+
+    padding-top: 40px;
+    padding-left: 32px;
+    padding-right: 32px;
+
+    background-repeat: no-repeat;
+    text-align: center;
+
+    h2 {
+      font-weight: 500;
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 18px;
+      font-weight: normal;
+      line-height: 1.35;
+    }
+  }
 }
 
-.swiper-slide > * + *{
-    margin-top: 16px;
+.swiper-slide > * + * {
+  margin-top: 16px;
+
+  @media (max-width: $mobile){
+    margin-top: 10px;
+  }
 }
 
 .swiper-slide:nth-child(1) {
   background-image: url(../img/swiper-section/bg-photo.png);
+
+  @media (max-width: $mobile) {
+    background-image: url(../img/swiper-section/xs-bg-photo.png);
+  }
 }
 .swiper-slide:nth-child(2) {
   background-image: url(../img/swiper-section/bg-telegram.png);
+
+  @media (max-width: $mobile) {
+    padding-left: 70px;
+    padding-right: 70px;
+    background-image: url(../img/swiper-section/xs-bg-telegram.png);
+  }
 }
 .swiper-slide:nth-child(3) {
   background-image: url(../img/swiper-section/bg-type.png);
+
+  @media (max-width: $mobile) {
+    background-image: url(../img/swiper-section/xs-bg-type.png);
+  }
 }

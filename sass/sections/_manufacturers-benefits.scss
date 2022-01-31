@@ -17,35 +17,100 @@
     font-size: 20px;
     line-height: 1.35;
   }
+
+  @media (max-width: $mobile) {
+    padding: 48px 32px 81px 32px;
+    
+
+    h2 {
+      width: auto;
+
+      margin-bottom: 32px;
+    }
+
+    h3 {
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
 }
 
 .manufacturers-benefits__row {
   display: flex;
+
+  @media (max-width: $mobile) {
+    flex-direction: column;
+  }
 }
 
 .manufacturers-benefits__row > * + * {
   margin-left: 38px;
+
+  @media (max-width: $mobile) {
+    margin-left: 0;
+    margin-top: 24px;
+  }
 }
 
 .manufacturers-benefits__element {
   display: flex;
   justify-content: space-between;
-  padding: 32px 32px 0 32px;
+  padding: 32px;
   background-color: #fff;
   border-radius: 24px;
 
   width: 48.4%;
-  height: 185px;
+  min-height: 185px;
 
   svg {
     flex-shrink: 0;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 24px;
+
+    width: 296px;
+    height: 270px;
+
+    flex-direction: column-reverse;
+    justify-content: space-between;
+
+    svg {
+      width: 56px;
+      height: 56px;
+    }
   }
 }
 
 .manufacturers-benefits__text {
   width: 343px;
+
+  @media (max-width: $mobile) {
+    width: auto;
+
+    br {
+      display: none;
+    }
+  }
 }
 
 .manufacturers-benefits__text > * + * {
   margin-top: 8px;
+}
+
+.manufacturers-benefits__element:nth-child(2) {
+  br {
+    display: none;
+  }
+  @media (max-width: $mobile) {
+    br {
+      display: block;
+    }
+    p {
+      width: 230px;
+    }
+  }
 }

@@ -18,21 +18,51 @@
   letter-spacing: -0.016em;
 
   color: #000000;
+
+  @media (max-width: $mobile) {
+    width: auto;
+    padding: 24px;
+    width: 296px;
+    height: 296px;
+
+    border-radius: 32px;
+
+    p {
+      font-size: 20px;
+    }
+  }
 }
 
 .analytics-card:nth-child(1) {
   background-image: url(../img/manufacturers-section-analytics/cart.png);
   background-repeat: no-repeat;
   background-position: bottom;
+
+  @media (max-width: $mobile) {
+    background-image: url(../img/manufacturers-section-analytics/xs-cart.png);
+    background-position: bottom right;
+  }
 }
 
 .analytics-card:nth-child(2) {
   background-image: url(../img/manufacturers-section-analytics/hand.png);
   background-repeat: no-repeat;
+
+  @media (max-width: $mobile) {
+    background-image: url(../img/manufacturers-section-analytics/xs-hand.png);
+  }
 }
 
 .analytics-card:nth-child(3) {
   background-image: url(../img/manufacturers-section-analytics/union.png);
   background-repeat: no-repeat;
   background-position: bottom;
+
+  @media (max-width: $mobile) {
+    background-image: url(../img/manufacturers-section-analytics/xs-union.png);
+
+    p {
+      width: 200px;
+    }
+  }
 }

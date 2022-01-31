@@ -1,7 +1,7 @@
-.footer-form{
-    @media(max-width: $mobile){
-        margin-top: -30px;
-    }
+.footer-form {
+  @media (max-width: $mobile) {
+    margin-top: -30px;
+  }
 }
 
 .footer-form__wrapper {
@@ -171,6 +171,12 @@
   margin-top: 26px;
 }
 
-.manufacturers .footer-form{
+.manufacturers .footer-form {
   margin-top: -33px;
+}
+
+.manufacturers .footer-form__info {
+  @media (max-width: $mobile) {
+    padding-top: 48px;
+  }
 }

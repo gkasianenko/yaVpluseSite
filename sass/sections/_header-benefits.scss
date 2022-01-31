@@ -206,6 +206,8 @@
 
   @media (max-width: $mobile) {
     margin-top: 0;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
   }
 }
 
@@ -243,6 +245,12 @@
   }
 }
 
+.manufacturers .header-benefits__wrapper {
+  @media (max-width: $mobile) {
+    background: #1d1d1d;
+  }
+}
+
 .manufacturers .header-benefits {
   padding-top: 104px;
   background: #1d1d1d;
@@ -254,6 +262,15 @@
     font-size: 20px;
     line-height: 1.35;
   }
+
+  @media (max-width: $mobile) {
+    padding-top: 0;
+    background: #f2f2f4;
+
+    h2 {
+      display: none;
+    }
+  }
 }
 
 .manufacturers .header-benefits__info > * + * {
@@ -263,10 +280,22 @@
 .manufacturers .header-benefits__right {
   padding-left: 120px;
   padding-right: 120px;
+
+  @media (max-width: $mobile) {
+    padding-top: 48px;
+    padding-left: 32px;
+    padding-right: 40px;
+    padding-bottom: 48px;
+  }
 }
 
 .manufacturers .header-benefits__desc {
   padding-top: 56px;
   padding-left: 0;
   padding-right: 0;
+
+  @media (max-width: $mobile) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
