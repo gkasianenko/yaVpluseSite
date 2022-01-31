@@ -1496,7 +1496,10 @@ main {
       background-color: #f2f2f4; } }
 
 .manufacturers .header-nav {
-  padding-bottom: 19px; }
+  padding-bottom: 32px; }
+  @media (max-width: 1155px) {
+    .manufacturers .header-nav {
+      padding-bottom: 19px; } }
 
 .button {
   height: 40px;

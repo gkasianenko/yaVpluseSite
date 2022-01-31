@@ -83,6 +83,10 @@
   }
 }
 
-.manufacturers .header-nav{
-  padding-bottom: 19px;
+.manufacturers .header-nav {
+  padding-bottom: 32px;
+
+  @media (max-width: $mobile) {
+    padding-bottom: 19px;
+  }
 }
