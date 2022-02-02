@@ -1,12 +1,8 @@
 const svgElements = document.querySelectorAll(".svg-plus");
 const burgerIcon = document.querySelector(".toggle-menu");
-const videoWrapper = document.querySelector(".learn-more__video-wrapper");
-const videoOverlay = document.querySelector(".overlay-video");
 
 svgElements.forEach((el) => {el.addEventListener("click", toggleAcordeon)});
 burgerIcon.addEventListener("click", toggleMobMenu);
-videoWrapper.addEventListener("click", openVideoOverlay);
-videoOverlay.addEventListener("click", closeVideoOverlay);
 
 
 function toggleAcordeon(event){
@@ -28,19 +24,8 @@ function toggleMobMenu(){
     document.body.classList.toggle("noscroll");
 }
 
-function openVideoOverlay(){
-  videoOverlay.classList.remove("hidden");
-  videoOverlay.classList.add("active");
-  document.body.classList.toggle("noscroll");
-}
-
-function closeVideoOverlay(){
-  videoOverlay.classList.remove("active");
-  videoOverlay.classList.add("hidden");
-}
-
 const swiper = new Swiper(".swiper", {
-  slidesPerView: 1.4,
+  slidesPerView: 1.1,
     pagination: {
       el: ".swiper-pagination",
       type: "fraction",

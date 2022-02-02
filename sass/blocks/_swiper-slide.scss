@@ -1,17 +1,26 @@
 .swiper-slide {
-  
+  @media (max-width: $mobile) {
+    width: auto !important;
+  }
 }
 
 .swiper-slide > * + * {
   margin-top: 16px;
 
-  @media (max-width: $mobile){
+  @media (max-width: $mobile) {
     margin-top: 10px;
   }
 }
 
-.swiper-slide__card{
-  margin-left: auto;margin-right: auto;
+.mobile-opportunities .swiper-slide > * + *{
+  @media (max-width: $mobile) {
+    margin-top: 0;
+  }
+}
+
+.swiper-slide__card {
+  margin-left: auto;
+  margin-right: auto;
   flex-shrink: 0;
   width: 832px;
   height: 480px;
@@ -82,3 +91,5 @@
     background-image: url(../img/swiper-section/xs-bg-type.png);
   }
 }
+
+

@@ -40,6 +40,14 @@ body.noscroll {
   transform: translateX(0);
 }
 
+.overlay-video.active{
+  display: block;
+}
+
+.overlay-video.hidden{
+  display: none;
+}
+
 .rotate {
   transform: rotate(180deg);
 }

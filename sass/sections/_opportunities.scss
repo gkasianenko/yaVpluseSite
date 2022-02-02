@@ -1,4 +1,23 @@
+.mobile-opportunities {
+  display: none;
+
+  @media (max-width: $mobile){
+    display: block;
+  }
+}
+
 .opportunities {
+  h2 {
+    color: #fff;
+    margin-bottom: 48px;
+  }
+
+  @media (max-width: $mobile){
+    display: none;
+  }
+}
+
+.mobile-opportunities .opportunities__content {
   h2 {
     color: #fff;
     margin-bottom: 48px;
@@ -10,16 +29,20 @@
   background-color: #2b64f8;
 
   overflow: hidden;
+}
 
+.mobile-opportunities .opportunities__content {
   @media (max-width: $mobile) {
-    padding: 83px 32px 57px 32px;
+    padding: 50px 32px 57px 32px;
   }
 }
 
 .opportunities__wrapper {
   display: flex;
   flex-direction: column;
+}
 
+.mobile-opportunities .opportunities__wrapper {
   @media (max-width: $mobile) {
     flex-direction: row;
     align-items: center;
@@ -28,7 +51,9 @@
 
 .opportunities__wrapper > * + * {
   margin-top: 38px;
+}
 
+.mobile-opportunities .opportunities__wrapper > * + * {
   @media (max-width: $mobile) {
     margin-top: 0;
     margin-left: 24px;
@@ -37,9 +62,6 @@
 
 .opportunities__top {
   display: flex;
-
-  @media (max-width: $mobile) {
-  }
 }
 
 .opportunities__top > * + * {
@@ -49,14 +71,19 @@
     margin-left: 24px;
   }
 }
-
 .opportunities__bottom {
+  display: flex;
+}
+
+.mobile-opportunities .opportunities__bottom {
   display: flex;
 }
 
 .opportunities__bottom > * + * {
   margin-left: 38px;
+}
 
+.mobile-opportunities .opportunities__bottom {
   @media (max-width: $mobile) {
     margin-left: 24px;
   }
@@ -89,7 +116,9 @@
 
     color: #000000;
   }
+}
 
+.mobile-opportunities .opportunities__element {
   @media (max-width: $mobile) {
     flex-direction: column-reverse;
     padding: 24px;
@@ -107,19 +136,25 @@
       p {
         font-size: 18px;
       }
+
+      @media (max-width: $mobile){
+        margin-top: 0;
+      }
     }
   }
 }
 
 .opportunities__text {
   max-width: 391px;
+}
 
+.mobile-opportunities .opportunities__text {
   @media (max-width: $mobile) {
     width: 198px;
   }
 }
 
-.opportunities__bottom:nth-child(2) .opportunities__text {
+.mobile-opportunities .opportunities__bottom:nth-child(2) .opportunities__text {
   @media (max-width: $mobile) {
     margin-top: 16px;
     width: auto;
@@ -128,7 +163,9 @@
 
 .opportunities__icon {
   margin-left: 15px;
+}
 
+.mobile-opportunities .opportunities__icon {
   @media (max-width: $mobile) {
     margin-left: 0;
   }

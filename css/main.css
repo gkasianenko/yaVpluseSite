@@ -37,6 +37,12 @@ body.noscroll {
 .mobile-menu.active {
   transform: translateX(0); }
 
+.overlay-video.active {
+  display: block; }
+
+.overlay-video.hidden {
+  display: none; }
+
 .rotate {
   transform: rotate(180deg); }
 
@@ -716,17 +722,29 @@ main {
         width: auto;
         margin-bottom: 32px; } }
 
-.learn-more img.template:nth-child(2) {
-  display: block; }
+.learn-more__video-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  height: 360px;
+  background-color: #fff;
+  border-radius: 24px;
+  cursor: pointer; }
+  .learn-more__video-wrapper:hover svg.play path {
+    opacity: 0.8; }
+  .learn-more__video-wrapper svg.play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer; }
   @media (max-width: 1155px) {
-    .learn-more img.template:nth-child(2) {
-      display: none; } }
-
-.learn-more img.template:nth-child(3) {
-  display: none; }
-  @media (max-width: 1155px) {
-    .learn-more img.template:nth-child(3) {
-      display: block; } }
+    .learn-more__video-wrapper {
+      height: 180px; }
+      .learn-more__video-wrapper svg.logo {
+        width: 250px; } }
 
 .learn-more__desc {
   margin-top: 104px; }
@@ -745,7 +763,20 @@ main {
       .faq h2 {
         margin-bottom: 31px; } }
 
+.mobile-opportunities {
+  display: none; }
+  @media (max-width: 1155px) {
+    .mobile-opportunities {
+      display: block; } }
+
 .opportunities h2 {
+  color: #fff;
+  margin-bottom: 48px; }
+@media (max-width: 1155px) {
+  .opportunities {
+    display: none; } }
+
+.mobile-opportunities .opportunities__content h2 {
   color: #fff;
   margin-bottom: 48px; }
 
@@ -753,24 +784,27 @@ main {
   padding: 104px 120px;
   background-color: #2b64f8;
   overflow: hidden; }
-  @media (max-width: 1155px) {
-    .opportunities__content {
-      padding: 83px 32px 57px 32px; } }
+
+@media (max-width: 1155px) {
+  .mobile-opportunities .opportunities__content {
+    padding: 50px 32px 57px 32px; } }
 
 .opportunities__wrapper {
   display: flex;
   flex-direction: column; }
-  @media (max-width: 1155px) {
-    .opportunities__wrapper {
-      flex-direction: row;
-      align-items: center; } }
+
+@media (max-width: 1155px) {
+  .mobile-opportunities .opportunities__wrapper {
+    flex-direction: row;
+    align-items: center; } }
 
 .opportunities__wrapper > * + * {
   margin-top: 38px; }
-  @media (max-width: 1155px) {
-    .opportunities__wrapper > * + * {
-      margin-top: 0;
-      margin-left: 24px; } }
+
+@media (max-width: 1155px) {
+  .mobile-opportunities .opportunities__wrapper > * + * {
+    margin-top: 0;
+    margin-left: 24px; } }
 
 .opportunities__top {
   display: flex; }
@@ -784,11 +818,15 @@ main {
 .opportunities__bottom {
   display: flex; }
 
+.mobile-opportunities .opportunities__bottom {
+  display: flex; }
+
 .opportunities__bottom > * + * {
   margin-left: 38px; }
-  @media (max-width: 1155px) {
-    .opportunities__bottom > * + * {
-      margin-left: 24px; } }
+
+@media (max-width: 1155px) {
+  .mobile-opportunities .opportunities__bottom {
+    margin-left: 24px; } }
 
 .opportunities__element {
   display: flex;
@@ -810,36 +848,42 @@ main {
     line-height: 1.2;
     letter-spacing: -0.016em;
     color: #000000; }
-  @media (max-width: 1155px) {
-    .opportunities__element {
-      flex-direction: column-reverse;
-      padding: 24px;
-      width: 280px;
-      height: 232px; }
-      .opportunities__element svg {
-        width: 48px;
-        height: 48px; }
-      .opportunities__element .opportunities__text {
-        margin-top: 40px; }
-        .opportunities__element .opportunities__text p {
-          font-size: 18px; } }
+
+@media (max-width: 1155px) {
+  .mobile-opportunities .opportunities__element {
+    flex-direction: column-reverse;
+    padding: 24px;
+    width: 280px;
+    height: 232px; }
+    .mobile-opportunities .opportunities__element svg {
+      width: 48px;
+      height: 48px; }
+    .mobile-opportunities .opportunities__element .opportunities__text {
+      margin-top: 40px; }
+      .mobile-opportunities .opportunities__element .opportunities__text p {
+        font-size: 18px; } }
+    @media (max-width: 1155px) and (max-width: 1155px) {
+      .mobile-opportunities .opportunities__element .opportunities__text {
+        margin-top: 0; } }
 
 .opportunities__text {
   max-width: 391px; }
-  @media (max-width: 1155px) {
-    .opportunities__text {
-      width: 198px; } }
 
 @media (max-width: 1155px) {
-  .opportunities__bottom:nth-child(2) .opportunities__text {
+  .mobile-opportunities .opportunities__text {
+    width: 198px; } }
+
+@media (max-width: 1155px) {
+  .mobile-opportunities .opportunities__bottom:nth-child(2) .opportunities__text {
     margin-top: 16px;
     width: auto; } }
 
 .opportunities__icon {
   margin-left: 15px; }
-  @media (max-width: 1155px) {
-    .opportunities__icon {
-      margin-left: 0; } }
+
+@media (max-width: 1155px) {
+  .mobile-opportunities .opportunities__icon {
+    margin-left: 0; } }
 
 .opportunities__pagination {
   margin-top: 28px;
@@ -895,7 +939,7 @@ main {
       align-items: center; } }
 
 .swiper-wrapper > * + * {
-  margin-left: 30px; }
+  margin-left: 44px; }
   @media (max-width: 1155px) {
     .swiper-wrapper > * + * {
       margin-left: 0;
@@ -2059,11 +2103,19 @@ main {
     .golden {
       font-size: 24px; } }
 
+@media (max-width: 1155px) {
+  .swiper-slide {
+    width: auto !important; } }
+
 .swiper-slide > * + * {
   margin-top: 16px; }
   @media (max-width: 1155px) {
     .swiper-slide > * + * {
       margin-top: 10px; } }
+
+@media (max-width: 1155px) {
+  .mobile-opportunities .swiper-slide > * + * {
+    margin-top: 0; } }
 
 .swiper-slide__card {
   margin-left: auto;
@@ -2171,6 +2223,35 @@ main {
       background-image: url(../img/manufacturers-section-analytics/xs-union.png); }
       .analytics-card:nth-child(3) p {
         width: 200px; } }
+
+.overlay-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 98;
+  display: none;
+  overflow: hidden; }
+
+.overlay-video .extended-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 810px;
+  margin-top: 233px; }
+  @media (max-width: 1155px) {
+    .overlay-video .extended-container {
+      padding-top: 202px;
+      margin-top: 450px; } }
+
+.overlay-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0; }
 
 /* Mobile */
 @media (max-width: 1155px) {
