@@ -24,7 +24,7 @@ function toggleMobMenu(){
     document.body.classList.toggle("noscroll");
 }
 
-var swiper = new Swiper(".mySwiper", {
+const swiper = new Swiper(".swiper", {
     pagination: {
       el: ".swiper-pagination",
       type: "fraction",

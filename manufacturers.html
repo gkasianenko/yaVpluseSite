@@ -217,7 +217,7 @@
 			</section>
 			<section class="swiper-section">
 				<div class="container">
-					<div class="swiper mySwiper">
+					<div class="swiper">
 						<div class="swiper-section__header">
 							<h2 class="title-h1">Как вводятся <br>данные чека?</h2>
 							<div class="swiper__pagination">
@@ -250,17 +250,24 @@
 						</div>
 						<div class="swiper-wrapper">
 						  <div class="swiper-slide">
-							  <h2 class="title-h3">Выбрать фото</h2>
-							  <p>Сканировать чек с помощью сканера
-								или выбрать фото 
-								из&nbspгалереи</p>
+							<div class="swiper-slide__card">
+								<h2 class="title-h3">Выбрать фото</h2>
+								<p>Сканировать чек с помощью сканера
+								  или выбрать фото 
+								  из&nbspгалереи</p>
 							</div>
+						</div>
 							<div class="swiper-slide">
-								<h2 class="title-h3">Telegram</h2>
-								<p>Сканировать чеки с&nbspпомощью Telegram бота</p>
-							  </div><div class="swiper-slide">
-								<h2 class="title-h3">Ввести вручную</h2>
-								<p>Pаполнить данные чека в ручном режиме и отправить на&nbspпроверку</p>
+								<div class="swiper-slide__card">
+									<h2 class="title-h3">Telegram</h2>
+									<p>Сканировать чеки с&nbspпомощью Telegram бота</p>
+								</div>
+							  </div>
+							  <div class="swiper-slide">
+								  <div class="swiper-slide__card">
+									  <h2 class="title-h3">Ввести вручную</h2>
+									  <p>Pаполнить данные чека в ручном режиме и отправить на&nbspпроверку</p>
+								  </div>
 							  </div>
 						</div>
 					</div>
@@ -471,7 +478,7 @@
 				</div>
 			</div>
 		</footer>
-		<script src="./js/main.js"></script>
 		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script src="./js/main.js"></script>
 	</body>
 </html>

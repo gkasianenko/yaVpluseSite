@@ -2067,6 +2067,7 @@ main {
   padding-left: 424px;
   padding-right: 88px;
   border-radius: 32px;
+  background-repeat: no-repeat;
   color: #fff; }
   .swiper-slide p {
     font-family: Montserrat;
@@ -2097,6 +2098,9 @@ main {
   @media (max-width: 1155px) {
     .swiper-slide > * + * {
       margin-top: 10px; } }
+
+.swiper-slide__card {
+  width: 320px; }
 
 .swiper-slide:nth-child(1) {
   background-image: url(../img/swiper-section/bg-photo.png); }
