@@ -2059,7 +2059,15 @@ main {
     .golden {
       font-size: 24px; } }
 
-.swiper-slide {
+.swiper-slide > * + * {
+  margin-top: 16px; }
+  @media (max-width: 1155px) {
+    .swiper-slide > * + * {
+      margin-top: 10px; } }
+
+.swiper-slide__card {
+  margin-left: auto;
+  margin-right: auto;
   flex-shrink: 0;
   width: 832px;
   height: 480px;
@@ -2069,7 +2077,7 @@ main {
   border-radius: 32px;
   background-repeat: no-repeat;
   color: #fff; }
-  .swiper-slide p {
+  .swiper-slide__card p {
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
@@ -2077,7 +2085,7 @@ main {
     line-height: 1.2;
     letter-spacing: -0.016em; }
   @media (max-width: 1155px) {
-    .swiper-slide {
+    .swiper-slide__card {
       width: 360px;
       height: 524px;
       padding-top: 40px;
@@ -2085,41 +2093,32 @@ main {
       padding-right: 32px;
       background-repeat: no-repeat;
       text-align: center; }
-      .swiper-slide h2 {
+      .swiper-slide__card h2 {
         font-weight: 500;
         font-size: 24px; }
-      .swiper-slide p {
+      .swiper-slide__card p {
         font-size: 18px;
         font-weight: normal;
         line-height: 1.35; } }
 
-.swiper-slide > * + * {
-  margin-top: 16px; }
-  @media (max-width: 1155px) {
-    .swiper-slide > * + * {
-      margin-top: 10px; } }
-
-.swiper-slide__card {
-  width: 320px; }
-
-.swiper-slide:nth-child(1) {
+.swiper-slide__card:nth-child(1) {
   background-image: url(../img/swiper-section/bg-photo.png); }
   @media (max-width: 1155px) {
-    .swiper-slide:nth-child(1) {
+    .swiper-slide__card:nth-child(1) {
       background-image: url(../img/swiper-section/xs-bg-photo.png); } }
 
-.swiper-slide:nth-child(2) {
+.swiper-slide__card:nth-child(2) {
   background-image: url(../img/swiper-section/bg-telegram.png); }
   @media (max-width: 1155px) {
-    .swiper-slide:nth-child(2) {
+    .swiper-slide__card:nth-child(2) {
       padding-left: 70px;
       padding-right: 70px;
       background-image: url(../img/swiper-section/xs-bg-telegram.png); } }
 
-.swiper-slide:nth-child(3) {
+.swiper-slide__card:nth-child(3) {
   background-image: url(../img/swiper-section/bg-type.png); }
   @media (max-width: 1155px) {
-    .swiper-slide:nth-child(3) {
+    .swiper-slide__card:nth-child(3) {
       background-image: url(../img/swiper-section/xs-bg-type.png); } }
 
 .analytics-card {
