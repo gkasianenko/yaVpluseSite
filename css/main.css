@@ -1289,6 +1289,9 @@ main {
   display: flex;
   align-items: flex-end;
   min-width: 406px; }
+  @media (max-width: 1155px) {
+    .footer__downloads {
+      min-width: unset; } }
 
 .footer__creds {
   display: flex;

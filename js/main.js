@@ -31,12 +31,16 @@ function toggleMobMenu(){
 function openVideoOverlay(){
   videoOverlay.classList.remove("hidden");
   videoOverlay.classList.add("active");
-  document.body.classList.toggle("noscroll");
+  document.body.classList.add("noscroll");
 }
 
-function closeVideoOverlay(){
+function closeVideoOverlay(video){
   videoOverlay.classList.remove("active");
   videoOverlay.classList.add("hidden");
+  document.body.classList.remove("noscroll");
+
+ 
+  
 }
 
 const swiper = new Swiper(".swiper", {
@@ -50,3 +54,5 @@ const swiper = new Swiper(".swiper", {
       prevEl: ".swiper-button-prev",
     },
   });
+
+  
