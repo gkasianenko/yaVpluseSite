@@ -1,5 +1,6 @@
 const svgElements = document.querySelectorAll(".svg-plus");
 const burgerIcon = document.querySelector(".toggle-menu");
+const toggleSpan = document.querySelector(".toggle");
 
 svgElements.forEach((el) => {el.addEventListener("click", toggleAcordeon)});
 burgerIcon.addEventListener("click", toggleMobMenu);
@@ -16,13 +17,15 @@ function toggleAcordeon(event){
 }
 
 function toggleMobMenu(){
-    const mobileMenu = document.querySelector(".mobile-menu");
-    const overlay = document.getElementById("overlay");
+  const mobileMenu = document.querySelector(".mobile-menu");
+  const overlay = document.getElementById("overlay");
 
-    mobileMenu.classList.toggle("active");
-    overlay.classList.toggle("active");
-    document.body.classList.toggle("noscroll");
+  toggleSpan.classList.toggle("toggle--active")
+  mobileMenu.classList.toggle("active");
+  overlay.classList.toggle("active");
+  document.body.classList.toggle("noscroll");
 }
+
 
 const swiper = new Swiper(".swiper", {
   slidesPerView: 1.1,

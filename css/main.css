@@ -6,7 +6,8 @@
 
 html {
   height: 100%;
-  /* sticky footer */ }
+  /* sticky footer */
+  scroll-behavior: smooth; }
 
 body {
   height: 100%;
@@ -2043,7 +2044,7 @@ main {
   width: 28px;
   height: 20px; }
 
-.toggle-menu span {
+.toggle {
   position: relative;
   display: inline-block;
   width: 100%;
@@ -2052,20 +2053,33 @@ main {
   background-color: #000000;
   transition: 0.5s; }
 
-.toggle-menu span:before,
-.toggle-menu span:after {
+.toggle:before,
+.toggle:after {
   content: "";
   position: absolute;
   width: 100%;
   height: 3px;
   background-color: #000000;
-  transition: 0.5s; }
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s; }
 
-.toggle-menu span::before {
+.toggle::before {
   top: -7px; }
 
-.toggle-menu span::after {
-  bottom: -7px; }
+.toggle::after {
+  top: 7px; }
+
+.toggle.toggle--active {
+  background: transparent; }
+
+.toggle.toggle--active::before {
+  transform: rotate(-45deg); }
+
+.toggle.toggle--active::after {
+  transform: rotate(45deg); }
+
+.toggle.toggle--active::before, .toggle.toggle--active::after {
+  top: 0;
+  transition: top 0.2s linear, transform 0.2s ease-in 0.2s; }
 
 .title {
   font-family: Montserrat, sans-serif;
@@ -2246,7 +2260,7 @@ main {
   @media (max-width: 1155px) {
     .overlay-video .extended-container {
       padding-top: 202px;
-      margin-top: 450px; } }
+      margin-top: 370px; } }
 
 .overlay-iframe {
   position: absolute;

@@ -1,13 +1,16 @@
 const svgElements = document.querySelectorAll(".svg-plus");
 const burgerIcon = document.querySelector(".toggle-menu");
+const mobileMenu = document.querySelector(".mobile-menu");
 const videoWrapper = document.querySelector(".learn-more__video-wrapper");
 const videoOverlay = document.querySelector(".overlay-video");
+const toggleSpan = document.querySelector(".toggle");
+const contactsButton = document.querySelector(".contacts-button");
 
 svgElements.forEach((el) => {el.addEventListener("click", toggleAcordeon)});
 burgerIcon.addEventListener("click", toggleMobMenu);
 videoWrapper.addEventListener("click", openVideoOverlay);
 videoOverlay.addEventListener("click", closeVideoOverlay);
-
+contactsButton.addEventListener("click", closeMobMenu);
 
 function toggleAcordeon(event){
 
@@ -20,12 +23,19 @@ function toggleAcordeon(event){
 }
 
 function toggleMobMenu(){
-    const mobileMenu = document.querySelector(".mobile-menu");
+    
     const overlay = document.getElementById("overlay");
 
+    toggleSpan.classList.toggle("toggle--active")
     mobileMenu.classList.toggle("active");
     overlay.classList.toggle("active");
     document.body.classList.toggle("noscroll");
+}
+
+function closeMobMenu(){
+  mobileMenu.classList.remove("active");
+  overlay.classList.remove("active");
+  document.body.classList.remove("noscroll");
 }
 
 function openVideoOverlay(){
