@@ -15,15 +15,15 @@
   position: relative;
   overflow: hidden;
   padding-top: 810px;
-  margin-top: 233px;
+  margin-top: 101px;
 
-  @media (max-width: $mobile){
+  @media (max-width: $mobile) {
     padding-top: 202px;
     margin-top: 370px;
   }
 }
 
-.overlay-iframe {
+.video-yavpluse {
   position: absolute;
   top: 0;
   left: 0;
@@ -31,5 +31,3 @@
   height: 100%;
   border: 0;
 }
-
-

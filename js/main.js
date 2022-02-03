@@ -3,6 +3,7 @@ const burgerIcon = document.querySelector(".toggle-menu");
 const mobileMenu = document.querySelector(".mobile-menu");
 const videoWrapper = document.querySelector(".learn-more__video-wrapper");
 const videoOverlay = document.querySelector(".overlay-video");
+const video = document.getElementById("video-yavpluse");
 const toggleSpan = document.querySelector(".toggle");
 const contactsButton = document.querySelector(".contacts-button");
 
@@ -36,6 +37,7 @@ function closeMobMenu(){
   mobileMenu.classList.remove("active");
   overlay.classList.remove("active");
   document.body.classList.remove("noscroll");
+  toggleSpan.classList.remove("toggle--active");
 }
 
 function openVideoOverlay(){
@@ -44,10 +46,18 @@ function openVideoOverlay(){
   document.body.classList.add("noscroll");
 }
 
-function closeVideoOverlay(video){
-  videoOverlay.classList.remove("active");
-  videoOverlay.classList.add("hidden");
-  document.body.classList.remove("noscroll");
+function closeVideoOverlay(event){
+
+  if (event.target === video){
+    event.stopPropagation();
+  } else {
+
+    videoOverlay.classList.remove("active");
+    videoOverlay.classList.add("hidden");
+    document.body.classList.remove("noscroll");
+    video.pause();
+  }
+
 
  
   

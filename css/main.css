@@ -900,6 +900,8 @@ main {
     color: #ffffff; }
   .opportunities__pagination svg {
     cursor: pointer; }
+    .opportunities__pagination svg:hover path {
+      opacity: 0.8; }
   @media (max-width: 1155px) {
     .opportunities__pagination {
       display: flex; } }
@@ -954,6 +956,8 @@ main {
   .swiper__pagination svg {
     cursor: pointer;
     flex-shrink: 0; }
+    .swiper__pagination svg:hover path {
+      opacity: 0.8; }
   @media (max-width: 1155px) {
     .swiper__pagination {
       display: none; } }
@@ -2256,13 +2260,13 @@ main {
   position: relative;
   overflow: hidden;
   padding-top: 810px;
-  margin-top: 233px; }
+  margin-top: 101px; }
   @media (max-width: 1155px) {
     .overlay-video .extended-container {
       padding-top: 202px;
       margin-top: 370px; } }
 
-.overlay-iframe {
+.video-yavpluse {
   position: absolute;
   top: 0;
   left: 0;
