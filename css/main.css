@@ -167,8 +167,7 @@ main {
   margin-top: auto;
   /* sticky footer */
   /* Just for fun */
-  background-color: #e2e2e2;
-  padding-bottom: 50px; }
+  background-color: #e2e2e2; }
 
 .header-title__wrapper {
   display: flex;
@@ -206,6 +205,7 @@ main {
   @media (max-width: 1155px) {
     .header-title__left {
       min-width: 360px;
+      width: auto;
       padding-left: 30px;
       padding-right: 30px;
       padding-bottom: 90px; }
@@ -339,9 +339,10 @@ main {
     .header-benefits__left {
       min-width: unset;
       width: auto;
-      margin-top: -30px;
+      margin-top: -35px;
       z-index: 2; }
       .header-benefits__left img {
+        width: 100%;
         border-radius: 32px; } }
 
 .header-benefits__left img:nth-child(1) {
@@ -594,14 +595,19 @@ main {
           display: block; } }
   @media (max-width: 1155px) {
     .how-it-works__card {
-      width: auto;
+      padding-top: 350px;
+      min-height: 545px;
+      max-width: unset;
+      width: 100%;
       border-radius: 32px; } }
 
 .how-it-works__card:nth-child(1) {
   background-image: url(../img/section-how-it-works/bg-map.png); }
   @media (max-width: 1155px) {
-    .how-it-works__card:nth-child(1) p {
-      width: 294px; } }
+    .how-it-works__card:nth-child(1) {
+      background-size: 100% 100%; }
+      .how-it-works__card:nth-child(1) p {
+        width: 294px; } }
 
 .how-it-works__card:nth-child(2) {
   background-image: url(../img/section-how-it-works/bg-scan.png); }
@@ -610,9 +616,10 @@ main {
   @media (max-width: 1155px) {
     .how-it-works__card:nth-child(2) {
       background-image: url(../img/section-how-it-works/xs-bg-scan.jpg);
-      margin-top: -50px;
-      padding-top: 320px;
-      padding-bottom: 72px; }
+      background-size: 100% 100%;
+      margin-top: -55px;
+      padding-top: 345px;
+      padding-bottom: 95px; }
       .how-it-works__card:nth-child(2) br {
         display: block; } }
 
@@ -621,8 +628,9 @@ main {
   @media (max-width: 1155px) {
     .how-it-works__card:nth-child(3) {
       background-image: url(../img/section-how-it-works/xs-bg-cards.jpg);
-      padding-top: 363px;
-      margin-top: -50px;
+      background-size: 100% 100%;
+      padding-top: 380px;
+      margin-top: -55px;
       border-bottom-right-radius: 0;
       border-bottom-left-radius: 0; } }
 
@@ -686,6 +694,7 @@ main {
         padding-left: 0;
         padding-right: 0; }
       .cashback .title-h1 {
+        max-width: 376px;
         width: auto;
         padding-left: 30px; } }
 
@@ -1119,6 +1128,7 @@ main {
         margin-bottom: 10px;
         width: 200px; }
       .footer-form__info p {
+        width: 312px;
         font-size: 18px;
         line-height: 1.2; }
       .footer-form__info br {
@@ -1134,6 +1144,7 @@ main {
   font-size: 32px; }
 @media (max-width: 1155px) {
   .footer-form__bottom p {
+    width: 315px;
     font-size: 18px;
     line-height: 1.2; } }
 
@@ -2280,8 +2291,17 @@ main {
     width: 360px;
     padding-left: 30px;
     padding-right: 30px; } }
+  @media (max-width: 1155px) and (max-width: 442px) {
+    .container {
+      width: auto;
+      min-width: 360px; } }
+
 @media (max-width: 1155px) {
   .extended-container {
     width: 360px; } }
+  @media (max-width: 1155px) and (max-width: 442px) {
+    .extended-container {
+      width: auto;
+      min-width: 360px; } }
 
 /*# sourceMappingURL=main.css.map */

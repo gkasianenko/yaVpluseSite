@@ -38,7 +38,7 @@ function closeMobMenu(){
 }
 
 const swiper = new Swiper(".swiper", {
-  slidesPerView: 1.1,
+  slidesPerView: 1.3,
     pagination: {
       el: ".swiper-pagination",
       type: "fraction",

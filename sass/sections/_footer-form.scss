@@ -61,6 +61,7 @@
     }
 
     p {
+      width: 312px;
       font-size: 18px;
       line-height: 1.2;
     }
@@ -86,6 +87,7 @@
 
   @media (max-width: $mobile) {
     p {
+      width: 315px;
       font-size: 18px;
       line-height: 1.2;
     }

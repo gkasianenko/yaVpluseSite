@@ -36,10 +36,11 @@
   @media (max-width: $mobile) {
     min-width: unset;
     width: auto;
-    margin-top: -30px;
+    margin-top: -35px;
     z-index: 2;
 
     img {
+      width: 100%;
       border-radius: 32px;
     }
   }
