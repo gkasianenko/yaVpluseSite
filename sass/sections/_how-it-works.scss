@@ -37,7 +37,7 @@
 .how-it-works__card {
   display: flex;
   flex-direction: column;
-  min-height: 520px;
+  height: 520px;
   max-width: 375px;
   width: 33%;
 
@@ -68,8 +68,6 @@
 
     @media (max-width: $mobile) {
       font-size: 18px;
-      
-      
 
       br {
         display: block;
@@ -81,7 +79,7 @@
     padding-top: 350px;
     min-height: 545px;
     max-width: unset;
-      width: 100%;
+    width: 100%;
     border-radius: 32px;
   }
 }
@@ -92,7 +90,7 @@
   @media (max-width: $mobile) {
     background-size: 100% 100%;
     p {
-      width: 294px;
+      width: 343px;
     }
   }
 }
@@ -163,21 +161,29 @@
 }
 
 .manufacturers .how-it-works__card {
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+
+  p {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
   @media (max-width: $mobile) {
-    min-height: 600px;
+    min-height: 577px;
   }
 }
 
 .manufacturers .how-it-works__card:nth-child(1) {
   background-image: url(../img/manufacturers-section-how-it-works/products.png);
-
-  @media (max-width: $mobile) {
-    background-image: url(../img/manufacturers-section-how-it-works/xs-products.png);
-  }
+  background-size: 100%;
 }
 
 .manufacturers .how-it-works__card:nth-child(2) {
-  background-image: url(../img/manufacturers-section-how-it-works/discount.png);
+  background-color: #1d1d1d;
+  background-image: unset;
+  overflow: hidden;
 
   @media (max-width: $mobile) {
     background-image: url(../img/manufacturers-section-how-it-works/xs-discount.png);

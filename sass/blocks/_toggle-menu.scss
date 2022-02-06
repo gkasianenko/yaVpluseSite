@@ -9,6 +9,8 @@
   padding-bottom: 10px;
   padding-top: 10px;
 
+  cursor: pointer;
+
   @media (max-width: $mobile) {
     display: flex;
   }
@@ -29,8 +31,6 @@
   transition: 0.5s;
 }
 
-
-
 .toggle:before,
 .toggle:after {
   content: "";
@@ -42,7 +42,6 @@
   transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
 }
 
-
 .toggle::before {
   top: -7px;
 }
@@ -51,19 +50,20 @@
   top: 7px;
 }
 
-.toggle.toggle--active{
-background: transparent;
+.toggle.toggle--active {
+  background: transparent;
 }
 
-.toggle.toggle--active::before{
-  transform:  rotate(-45deg);
+.toggle.toggle--active::before {
+  transform: rotate(-45deg);
 }
 
-.toggle.toggle--active::after{
-  transform:  rotate(45deg);
+.toggle.toggle--active::after {
+  transform: rotate(45deg);
 }
 
-.toggle.toggle--active::before, .toggle.toggle--active::after{
+.toggle.toggle--active::before,
+.toggle.toggle--active::after {
   top: 0;
-  transition: top .2s linear, transform .2s ease-in .2s
+  transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 }

@@ -17,9 +17,13 @@
   width: 50%;
   color: #fff;
 
+  background: #2B64F8;
   background-image: url(../img/partners-section-footer-form/bg-info.png);
   border-top-left-radius: 32px;
   border-bottom-left-radius: 32px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom;
 
   h2:nth-child(1) {
     font-size: 48px;

@@ -219,7 +219,7 @@
 }
 
 .learn-more-pattern__row-three .learn-more-pattern__block:nth-child(1) {
-  padding-top: 104px;
+  padding-top: 100px;
   padding-bottom: 104px;
   background-color: #1d1d1d;
   border-bottom-left-radius: 24px;
@@ -282,7 +282,22 @@
     padding-top: 56px;
   }
 
+  .learn-more-pattern__block-content img:nth-child(1){
+    display: block;
+    @media (max-width: $mobile){
+      display: none;
+    }
+  }
+
+  .learn-more-pattern__block-content img:nth-child(2){
+    display: none;
+    @media (max-width: $mobile){
+      display: block;;
+    }
+  }
+
   @media (max-width: $mobile) {
+    
     border-bottom-right-radius: 0;
   }
 }

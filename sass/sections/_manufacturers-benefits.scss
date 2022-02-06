@@ -72,7 +72,7 @@
   @media (max-width: $mobile) {
     padding: 24px;
 
-    width: 296px;
+    width: 100%;
     height: 270px;
 
     flex-direction: column-reverse;
@@ -90,6 +90,7 @@
 
   @media (max-width: $mobile) {
     width: auto;
+    max-width: 282px;
 
     br {
       display: none;

@@ -1,3 +1,11 @@
+.header-title {
+  padding-top: 118px;
+
+  @media (max-width: $mobile) {
+    padding-top: 80px;
+  }
+}
+
 .header-title__wrapper {
   display: flex;
   justify-content: flex-end;
@@ -142,6 +150,7 @@
 }
 
 .manufacturers .header-title {
+  
   background-color: #1d1d1d;
   color: #fff;
 

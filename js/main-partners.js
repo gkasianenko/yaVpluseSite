@@ -1,11 +1,12 @@
 const svgElements = document.querySelectorAll(".svg-plus");
-const burgerIcon = document.querySelector(".toggle-menu");
+const burgerIcon = document.querySelectorAll(".toggle-menu");
 const toggleSpan = document.querySelector(".toggle");
 const contactsButton = document.querySelector(".contacts-button");
 const mobileMenu = document.querySelector(".mobile-menu");
+const overlay = document.getElementById("overlay");
 
 svgElements.forEach((el) => {el.addEventListener("click", toggleAcordeon)});
-burgerIcon.addEventListener("click", toggleMobMenu);
+burgerIcon.forEach((el) => {addEventListener("click", toggleMobMenu)});
 contactsButton.addEventListener("click", closeMobMenu);
 
 
@@ -19,14 +20,17 @@ function toggleAcordeon(event){
 
 }
 
-function toggleMobMenu(){
-  const mobileMenu = document.querySelector(".mobile-menu");
-  const overlay = document.getElementById("overlay");
+function toggleMobMenu(event){
+    
+  if(event.target.dataset.nav){
 
-  toggleSpan.classList.toggle("toggle--active")
-  mobileMenu.classList.toggle("active");
-  overlay.classList.toggle("active");
-  document.body.classList.toggle("noscroll");
+    const overlay = document.getElementById("overlay");
+
+    toggleSpan.classList.toggle("toggle--active")
+    mobileMenu.classList.toggle("active");
+    overlay.classList.toggle("active");
+    document.body.classList.toggle("noscroll");
+  } 
 }
 
 function closeMobMenu(){
