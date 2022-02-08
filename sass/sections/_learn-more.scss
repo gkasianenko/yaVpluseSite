@@ -64,6 +64,10 @@
 .learn-more__desc {
   margin-top: 104px;
 
+  @media (max-width: $tablet){
+    margin-top: 144px;
+  }
+
   @media (max-width: $mobile) {
     margin-top: 56px;
   }

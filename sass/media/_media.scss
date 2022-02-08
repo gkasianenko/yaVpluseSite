@@ -1,6 +1,20 @@
+/*Tablet*/
+@media (max-width: $tablet){
+	.container{
+		max-width: 1150px;
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	.extended-container{
+		max-width: 1150px;
+	}
+}
+
+
 
 /* Mobile */
-@media (max-width: 1155px) {
+@media (max-width: $mobile) {
     .container {
 		width: 360px;
 		padding-left: 30px;
@@ -13,7 +27,7 @@
 	}
 }
 
-@media (max-width: 1155px) {
+@media (max-width: $mobile) {
     .extended-container {
 		width: 360px;
 		

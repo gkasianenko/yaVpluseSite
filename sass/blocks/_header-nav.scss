@@ -29,17 +29,15 @@
 .header-nav__wrapper {
   display: flex;
   align-items: center;
-
-  @media (max-width: $mobile) {
-    justify-content: space-between;
-  }
+  justify-content: space-between;
 }
 
 .header-nav__left {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   width: 70%;
-  min-width: 579px;
+  max-width: 593px;
 
   @media (max-width: $mobile) {
     min-width: unset;
@@ -49,15 +47,11 @@
 .header-nav__right {
   display: flex;
   justify-content: flex-end;
-  width: 30%;
+  width: 33%;
 
   @media (max-width: $mobile) {
     display: none;
   }
-}
-
-.header-nav__left > * + * {
-  margin-left: 56px;
 }
 
 .header-nav__menu {
@@ -92,9 +86,7 @@
 }
 
 .manufacturers .header-nav {
-
   @media (max-width: $mobile) {
-    
     background-color: #f2f2f4;
   }
 }

@@ -36,6 +36,12 @@
 
   background-color: #1d1d1d;
 
+  @media(max-width: $tablet){
+    padding-top: 70px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
   @media (max-width: $mobile) {
     padding-top: 0;
     padding-left: 32px;
@@ -62,6 +68,10 @@
 
 .footer__left > * + * {
   margin-left: 36px;
+
+  @media(max-width: $tablet){
+    margin-left: 30px;
+  }
 
   @media (max-width: $mobile) {
     margin-left: 0;

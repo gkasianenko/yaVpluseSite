@@ -8,9 +8,25 @@
       
   }
 
+  @media (max-width: $tablet){
+    padding-bottom: 144px;
+    img{
+      width: 535px;
+    }
+
+    & .title-h1{
+      width: 590px;
+      
+  }
+  }
+
   @media (max-width: $mobile){
     padding-top: 48px;
     padding-bottom: 0;
+
+    img{
+      width: auto;
+    }
 
     & .container{
       padding-left: 0;
@@ -36,6 +52,10 @@
 
 .cashback-cards__wrapper > * + * {
   margin-top: 104px;
+
+  @media (max-width: $tablet){
+    margin-top: 56px;
+  }
 
   @media (max-width: $mobile){
     margin-top: 24px;
