@@ -78,7 +78,7 @@
     min-width: 360px;
     width: auto;
     padding-left: 30px;
-    padding-right: 30px;
+    padding-right: 34px;
     padding-bottom: 90px;
 
     .title-h1 {
@@ -176,10 +176,22 @@
 
 .partners .header-title__right img {
   display: block;
+  
+  
 
   @media (max-width: $mobile) {
     border-top-left-radius: 32px;
     border-top-right-radius: 32px;
+  }
+}
+
+.partners .header-title__left .title-h1{
+  @media (max-width: $tablet) {
+    width: 300px;
+  }
+  
+  @media(max-width: $mobile){
+    width: auto;
   }
 }
 
@@ -195,6 +207,8 @@
 .partners .header-title__right img {
   padding: 0;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .manufacturers .header-title {

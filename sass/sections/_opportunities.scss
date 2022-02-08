@@ -29,6 +29,10 @@
   background-color: #2b64f8;
 
   overflow: hidden;
+
+  @media (max-width: $tablet){
+    padding: 72px 40px;
+  }
 }
 
 .mobile-opportunities .opportunities__content {

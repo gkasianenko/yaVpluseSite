@@ -6,7 +6,7 @@
     margin-bottom: 48px;
   }
 
-  @media (max-width: $tablet){
+  @media (max-width: $tablet) {
     padding-top: 72px;
     padding-bottom: 144px;
   }
@@ -233,7 +233,7 @@
   @media (max-width: $mobile) {
     background-image: url(../img/section-how-it-works/xs-bg-cards.png);
     background-size: 100% 100%;
-    
+
     min-height: 520px;
     margin-top: -55px;
 
@@ -260,26 +260,95 @@
 .partners .how-it-works__card {
   padding: 32px 32px;
 
+  p {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   & p:nth-child(1) {
     font-size: 40px;
+
+    @media (max-width: $tablet) {
+      font-size: 32px;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 40px;
+    }
   }
 
   & p:nth-child(2) {
     font-size: 24px;
     line-height: 1.15;
+
+    @media (max-width: $tablet) {
+      font-size: 20px;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 24px;
+    }
+  }
+
+  @media (max-width: $tablet) {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-top: 24px;
   }
 }
 
+.partners .how-it-works__info {
+
+
+@media (max-width: $tablet){
+
+  padding-left: 30px;
+  padding-right: 30px;
+}
+}
+
 .partners .how-it-works__card:nth-child(1) {
+  background-color: #255be5;
   background-image: url(../img/partners-section-how-it-works/bg-places.png);
+
+  @media (max-width: $tablet) {
+    overflow: hidden;
+    background-image: unset;
+  }
 }
 
 .partners .how-it-works__card:nth-child(2) {
+  background-color: #1d1d1d;
   background-image: url(../img/partners-section-how-it-works/bg-cards.png);
+
+  @media (max-width: $tablet) {
+    img {
+      padding-left: 0;
+      padding-right: 0;
+      border-bottom-right-radius: 23px;
+    }
+
+    .how-it-works__image{
+      justify-content: flex-end;
+    }
+
+    
+    background-image: unset;
+  }
 }
 
 .partners .how-it-works__card:nth-child(3) {
+  background-color: #411ec0;
   background-image: url(../img/partners-section-how-it-works/bg-icons.png);
+
+  @media (max-width: $tablet) {
+    background-image: unset;
+  }
+
+  @media (max-width: $mobile){
+    min-height: 550px;
+  }
 }
 
 .partners .how-it-works__card > * + * {

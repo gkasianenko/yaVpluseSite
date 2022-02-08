@@ -228,7 +228,7 @@ main {
       min-width: 360px;
       width: auto;
       padding-left: 30px;
-      padding-right: 30px;
+      padding-right: 34px;
       padding-bottom: 90px; }
       .header-title__left .title-h1 {
         font-size: 36px; } }
@@ -306,6 +306,13 @@ main {
       border-top-left-radius: 32px;
       border-top-right-radius: 32px; } }
 
+@media (max-width: 1155px) {
+  .partners .header-title__left .title-h1 {
+    width: 300px; } }
+@media (max-width: 959px) {
+  .partners .header-title__left .title-h1 {
+    width: auto; } }
+
 .partners .header-title__left p {
   margin-bottom: 40px; }
 
@@ -315,7 +322,9 @@ main {
 
 .partners .header-title__right img {
   padding: 0;
-  width: 100%; }
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
 
 .manufacturers .header-title {
   background-color: #1d1d1d;
@@ -531,7 +540,7 @@ main {
   color: #ffffff; }
   @media (max-width: 959px) {
     .partners .header-benefits {
-      margin-top: -25px; } }
+      margin-top: -30px; } }
 
 .partners .header-benefits__wrapper {
   display: block; }
@@ -548,6 +557,9 @@ main {
   display: flex;
   flex-direction: row;
   padding: 104px 120px; }
+  @media (max-width: 1155px) {
+    .partners .header-benefits__desc {
+      padding: 72px 48px; } }
   @media (max-width: 959px) {
     .partners .header-benefits__desc {
       flex-direction: column;
@@ -557,6 +569,9 @@ main {
 .partners .header-benefits__desc > * + * {
   margin-left: 75px;
   margin-top: 0; }
+  @media (max-width: 1155px) {
+    .partners .header-benefits__desc > * + * {
+      margin-left: 100px; } }
   @media (max-width: 959px) {
     .partners .header-benefits__desc > * + * {
       margin-left: 0;
@@ -564,9 +579,18 @@ main {
 
 .partners .header-benefits__element {
   width: 29.2%; }
+  @media (max-width: 1155px) {
+    .partners .header-benefits__element p {
+      font-family: Inter;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 1.35; } }
   @media (max-width: 959px) {
     .partners .header-benefits__element {
-      width: auto; } }
+      width: auto; }
+      .partners .header-benefits__element p {
+        font-size: 18px; } }
 
 @media (max-width: 959px) {
   .manufacturers .header-benefits__wrapper {
@@ -788,20 +812,68 @@ main {
 
 .partners .how-it-works__card {
   padding: 32px 32px; }
+  .partners .how-it-works__card p {
+    padding-left: 0;
+    padding-right: 0; }
   .partners .how-it-works__card p:nth-child(1) {
     font-size: 40px; }
+    @media (max-width: 1155px) {
+      .partners .how-it-works__card p:nth-child(1) {
+        font-size: 32px; } }
+    @media (max-width: 959px) {
+      .partners .how-it-works__card p:nth-child(1) {
+        font-size: 40px; } }
   .partners .how-it-works__card p:nth-child(2) {
     font-size: 24px;
     line-height: 1.15; }
+    @media (max-width: 1155px) {
+      .partners .how-it-works__card p:nth-child(2) {
+        font-size: 20px; } }
+    @media (max-width: 959px) {
+      .partners .how-it-works__card p:nth-child(2) {
+        font-size: 24px; } }
+  @media (max-width: 1155px) {
+    .partners .how-it-works__card {
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 0;
+      padding-top: 24px; } }
+
+@media (max-width: 1155px) {
+  .partners .how-it-works__info {
+    padding-left: 30px;
+    padding-right: 30px; } }
 
 .partners .how-it-works__card:nth-child(1) {
+  background-color: #255be5;
   background-image: url(../img/partners-section-how-it-works/bg-places.png); }
+  @media (max-width: 1155px) {
+    .partners .how-it-works__card:nth-child(1) {
+      overflow: hidden;
+      background-image: unset; } }
 
 .partners .how-it-works__card:nth-child(2) {
+  background-color: #1d1d1d;
   background-image: url(../img/partners-section-how-it-works/bg-cards.png); }
+  @media (max-width: 1155px) {
+    .partners .how-it-works__card:nth-child(2) {
+      background-image: unset; }
+      .partners .how-it-works__card:nth-child(2) img {
+        padding-left: 0;
+        padding-right: 0;
+        border-bottom-right-radius: 23px; }
+      .partners .how-it-works__card:nth-child(2) .how-it-works__image {
+        justify-content: flex-end; } }
 
 .partners .how-it-works__card:nth-child(3) {
+  background-color: #411ec0;
   background-image: url(../img/partners-section-how-it-works/bg-icons.png); }
+  @media (max-width: 1155px) {
+    .partners .how-it-works__card:nth-child(3) {
+      background-image: unset; } }
+  @media (max-width: 959px) {
+    .partners .how-it-works__card:nth-child(3) {
+      min-height: 550px; } }
 
 .partners .how-it-works__card > * + * {
   margin-top: 16px; }
@@ -965,6 +1037,9 @@ main {
   padding: 104px 120px;
   background-color: #2b64f8;
   overflow: hidden; }
+  @media (max-width: 1155px) {
+    .opportunities__content {
+      padding: 72px 40px; } }
 
 @media (max-width: 959px) {
   .mobile-opportunities .opportunities__content {
@@ -1280,6 +1355,9 @@ main {
     font-size: 48px;
     line-height: 1.2;
     margin-bottom: 24px; }
+    @media (max-width: 1155px) {
+      .footer-form__info h2:nth-child(1) {
+        font-size: 40px; } }
   .footer-form__info p {
     font-size: 24px;
     line-height: 1.35; }
@@ -1287,6 +1365,12 @@ main {
     font-size: 40px;
     line-height: 1;
     margin-bottom: 20px; }
+    @media (max-width: 1155px) {
+      .footer-form__info h3:nth-child(1) {
+        font-size: 40px; } }
+  @media (max-width: 1155px) {
+    .footer-form__info {
+      padding: 72px 48px; } }
   @media (max-width: 959px) {
     .footer-form__info {
       padding: 78px 20px 48px 32px;
@@ -1312,6 +1396,9 @@ main {
 
 .footer-form__info > * + * {
   margin-top: 270px; }
+  @media (max-width: 1155px) {
+    .footer-form__info > * + * {
+      margin-top: 206px; } }
   @media (max-width: 959px) {
     .footer-form__info > * + * {
       margin-top: 56px; } }
@@ -1369,6 +1456,9 @@ main {
     color: #000; }
     .footer-form__form a:hover {
       opacity: 0.8; }
+  @media (max-width: 1155px) {
+    .footer-form__form {
+      padding: 43px 48px; } }
   @media (max-width: 959px) {
     .footer-form__form {
       width: 100%;

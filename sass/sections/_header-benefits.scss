@@ -246,7 +246,7 @@
   color: #ffffff;
 
   @media (max-width: $mobile) {
-    margin-top: -25px;
+    margin-top: -30px;
   }
 }
 
@@ -269,6 +269,10 @@
   flex-direction: row;
   padding: 104px 120px;
 
+  @media (max-width: $tablet) {
+    padding: 72px 48px;
+  }
+
   @media (max-width: $mobile) {
     flex-direction: column;
     padding: 48px 0 28px 32px;
@@ -280,6 +284,10 @@
   margin-left: 75px;
   margin-top: 0;
 
+  @media (max-width: $tablet){
+    margin-left: 100px;
+  }
+
   @media (max-width: $mobile) {
     margin-left: 0;
     margin-top: 24px;
@@ -287,9 +295,25 @@
 }
 
 .partners .header-benefits__element {
+
   width: 29.2%;
 
+ 
+
+  @media (max-width: $tablet) {
+    p {
+      font-family: Inter;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 1.35;
+    }
+  }
+
   @media (max-width: $mobile) {
+    p {
+      font-size: 18px;
+    }
     width: auto;
   }
 }

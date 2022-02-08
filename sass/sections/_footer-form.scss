@@ -29,6 +29,10 @@
     font-size: 48px;
     line-height: 1.2;
     margin-bottom: 24px;
+
+    @media(max-width: $tablet){
+      font-size: 40px;
+    }
   }
 
   p {
@@ -40,6 +44,14 @@
     font-size: 40px;
     line-height: 1;
     margin-bottom: 20px;
+
+    @media(max-width: $tablet){
+      font-size: 40px;
+    }
+  }
+
+  @media (max-width: $tablet){
+    padding: 72px 48px;
   }
 
   @media (max-width: $mobile) {
@@ -78,6 +90,10 @@
 
 .footer-form__info > * + * {
   margin-top: 270px;
+
+  @media(max-width: $tablet){
+   margin-top: 206px;
+  }
 
   @media (max-width: $mobile) {
     margin-top: 56px;
@@ -162,6 +178,10 @@
     &:hover {
       opacity: 0.8;
     }
+  }
+
+  @media (max-width: $tablet){
+    padding: 43px 48px;
   }
 
   @media (max-width: $mobile) {
