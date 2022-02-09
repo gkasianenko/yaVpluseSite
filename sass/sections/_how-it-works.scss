@@ -403,6 +403,15 @@
     display: block;
   }
 
+  .how-it-works__image{
+    display: flex;
+    justify-content: flex-end;
+    
+    img{
+      max-width: 380px;
+    }
+  }
+
   @media (max-width: $mobile) {
     background-image: url(../img/manufacturers-section-how-it-works/xs-discount.png);
   }

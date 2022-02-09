@@ -936,6 +936,11 @@ main {
   overflow: hidden; }
   .manufacturers .how-it-works__card:nth-child(2) img {
     display: block; }
+  .manufacturers .how-it-works__card:nth-child(2) .how-it-works__image {
+    display: flex;
+    justify-content: flex-end; }
+    .manufacturers .how-it-works__card:nth-child(2) .how-it-works__image img {
+      max-width: 380px; }
   @media (max-width: 959px) {
     .manufacturers .how-it-works__card:nth-child(2) {
       background-image: url(../img/manufacturers-section-how-it-works/xs-discount.png); } }
