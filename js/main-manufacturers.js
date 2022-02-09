@@ -34,6 +34,25 @@ function closeMobMenu(){
 
 const swiper = new Swiper(".swiper", {
   slidesPerView: 1.4,
+
+  breakpoints: {
+    1235: {
+      slidesPerView: 1.4
+    },
+    1167: {
+      slidesPerView: 1.3
+    },
+    1115: {
+      slidesPerView: 1.2,
+    },
+    1030: {
+      slidesPerView: 1.1
+    },
+    913: {
+      slidesPerView: 1
+    }
+
+  },
     pagination: {
       el: ".swiper-pagination",
       type: "fraction",

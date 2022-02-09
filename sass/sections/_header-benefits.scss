@@ -336,14 +336,22 @@
     line-height: 1.35;
   }
 
-  @media (max-width: $mobile) {
-    margin-top: 0;
-    padding-top: 0;
-    background: #f2f2f4;
+  @media (max-width: $tablet){
+    padding-top: 72px;
+    padding-bottom: 73px;
 
     h2 {
       display: none;
     }
+  }
+
+  @media (max-width: $mobile) {
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    background: #f2f2f4;
+
+    
   }
 }
 
@@ -351,10 +359,16 @@
   margin-top: 12px;
 }
 
+
 .manufacturers .header-benefits__right {
   padding-left: 120px;
   padding-right: 120px;
-
+  
+  @media (max-width: $tablet) {
+    padding-left: 40px;
+    padding-right: 40px;    
+  }
+  
   @media (max-width: $mobile) {
     padding-top: 48px;
     padding-left: 32px;
@@ -367,9 +381,31 @@
   padding-top: 56px;
   padding-left: 0;
   padding-right: 0;
-
-  @media (max-width: $mobile) {
+  
+  @media (max-width: $tablet){
     padding-top: 0;
     padding-bottom: 0;
+  }
+  
+  
+}
+
+.manufacturers .header-benefits__desc > * + *{
+  @media (max-width: $tablet){
+    margin-left: 60px;
+  }
+
+  @media (max-width: $mobile){
+    margin-left: 0;
+  }
+}
+
+.manufacturers .header-benefits__element {
+  @media (max-width: $tablet){
+    width: 35%;
+  }
+
+  @media (max-width: $mobile){
+    width: auto;
   }
 }

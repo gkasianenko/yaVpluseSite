@@ -4,8 +4,13 @@
     width: 744px;
     margin-bottom: 56px;
 
+    @media (max-width: $tablet){
+      width: 697px;
+    }
+
     @media (max-width: $mobile) {
       width: auto;
+      max-width: 419px;
       text-align: center;
     }
   }

@@ -42,7 +42,27 @@ function closeMobMenu(){
 }
 
 const swiper = new Swiper(".swiper", {
-  slidesPerView: 1.15,
+ 
+  
+  breakpoints: {
+    441: {
+      slidesPerView: 1.1
+    },
+    440: {
+      slidesPerView: 1.35
+    },
+    393: {
+      slidesPerView: 1.2
+    },
+    380: {
+      slidesPerView: 1.15
+    },
+    360: {
+      slidesPerView: 1.1
+    }
+  },
+  
+  
     pagination: {
       el: ".swiper-pagination",
       type: "fraction",

@@ -605,13 +605,18 @@ main {
     font-weight: normal;
     font-size: 20px;
     line-height: 1.35; }
+  @media (max-width: 1155px) {
+    .manufacturers .header-benefits {
+      padding-top: 72px;
+      padding-bottom: 73px; }
+      .manufacturers .header-benefits h2 {
+        display: none; } }
   @media (max-width: 959px) {
     .manufacturers .header-benefits {
       margin-top: 0;
       padding-top: 0;
-      background: #f2f2f4; }
-      .manufacturers .header-benefits h2 {
-        display: none; } }
+      padding-bottom: 0;
+      background: #f2f2f4; } }
 
 .manufacturers .header-benefits__info > * + * {
   margin-top: 12px; }
@@ -619,6 +624,10 @@ main {
 .manufacturers .header-benefits__right {
   padding-left: 120px;
   padding-right: 120px; }
+  @media (max-width: 1155px) {
+    .manufacturers .header-benefits__right {
+      padding-left: 40px;
+      padding-right: 40px; } }
   @media (max-width: 959px) {
     .manufacturers .header-benefits__right {
       padding-top: 48px;
@@ -630,10 +639,24 @@ main {
   padding-top: 56px;
   padding-left: 0;
   padding-right: 0; }
-  @media (max-width: 959px) {
+  @media (max-width: 1155px) {
     .manufacturers .header-benefits__desc {
       padding-top: 0;
       padding-bottom: 0; } }
+
+@media (max-width: 1155px) {
+  .manufacturers .header-benefits__desc > * + * {
+    margin-left: 60px; } }
+@media (max-width: 959px) {
+  .manufacturers .header-benefits__desc > * + * {
+    margin-left: 0; } }
+
+@media (max-width: 1155px) {
+  .manufacturers .header-benefits__element {
+    width: 35%; } }
+@media (max-width: 959px) {
+  .manufacturers .header-benefits__element {
+    width: auto; } }
 
 .how-it-works {
   padding-top: 104px;
@@ -889,23 +912,41 @@ main {
     .manufacturers .how-it-works__card {
       min-height: 577px; } }
 
+.manufacturers .how-it-works__card img {
+  display: block; }
+
+.manufacturers .how-it-works__info {
+  padding-left: 0;
+  padding-right: 0; }
+
 .manufacturers .how-it-works__card:nth-child(1) {
   background-image: url(../img/manufacturers-section-how-it-works/products.png);
-  background-size: 100%; }
+  background-color: #1d1d1d;
+  background-size: 100%;
+  background-position: bottom; }
+  .manufacturers .how-it-works__card:nth-child(1) img {
+    display: block; }
+  @media (max-width: 959px) {
+    .manufacturers .how-it-works__card:nth-child(1) {
+      padding-bottom: 40px; } }
 
 .manufacturers .how-it-works__card:nth-child(2) {
   background-color: #1d1d1d;
   background-image: unset;
   overflow: hidden; }
+  .manufacturers .how-it-works__card:nth-child(2) img {
+    display: block; }
   @media (max-width: 959px) {
     .manufacturers .how-it-works__card:nth-child(2) {
       background-image: url(../img/manufacturers-section-how-it-works/xs-discount.png); } }
 
 .manufacturers .how-it-works__card:nth-child(3) {
-  background-image: url(../img/manufacturers-section-how-it-works/cart.png); }
+  background-color: #1d1d1d;
+  background-image: unset; }
+  .manufacturers .how-it-works__card:nth-child(3) img {
+    display: block; }
   @media (max-width: 959px) {
     .manufacturers .how-it-works__card:nth-child(3) {
-      background-image: url(../img/manufacturers-section-how-it-works/xs-cart.png);
       border-radius: 32px; } }
 
 .cashback {
@@ -1231,9 +1272,13 @@ main {
   .analytics h2 {
     width: 744px;
     margin-bottom: 56px; }
+    @media (max-width: 1155px) {
+      .analytics h2 {
+        width: 697px; } }
     @media (max-width: 959px) {
       .analytics h2 {
         width: auto;
+        max-width: 419px;
         text-align: center; } }
   @media (max-width: 959px) {
     .analytics {
@@ -1265,6 +1310,12 @@ main {
     font-weight: normal;
     font-size: 20px;
     line-height: 1.35; }
+  @media (max-width: 1155px) {
+    .manufacturers-benefits__content {
+      padding-top: 72px;
+      padding: 40px;
+      padding-right: 40px;
+      padding-bottom: 105px; } }
   @media (max-width: 959px) {
     .manufacturers-benefits__content {
       padding: 48px 32px 81px 32px; }
@@ -1299,6 +1350,11 @@ main {
   min-height: 185px; }
   .manufacturers-benefits__element svg {
     flex-shrink: 0; }
+  @media (max-width: 1155px) {
+    .manufacturers-benefits__element svg {
+      width: 64px;
+      height: 64px;
+      flex-shrink: 0; } }
   @media (max-width: 959px) {
     .manufacturers-benefits__element {
       padding: 24px;
