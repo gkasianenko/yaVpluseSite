@@ -41,6 +41,90 @@ function closeMobMenu(){
   toggleSpan.classList.remove("toggle--active");
 }
 
+// initialize the validation library
+const validation = new JustValidate(
+  '#form',
+  {
+    errorFieldCssClass: 'is-invalid',
+    errorFieldStyle: {
+      border: '1px solid red',
+    },
+    errorLabelCssClass: 'is-label-invalid',
+    errorLabelStyle: {
+      color: 'red',
+      textDecoration: 'underlined',
+    },
+    focusInvalidField: true,
+    lockForm: true,
+    tooltip: {
+      position: 'bottom',
+    },
+    errorContainer: '.errors-container',
+  },
+  [
+    {
+      key: 'Name is too short',
+      dict: {
+        ru: 'Имя слишком короткое',
+        es: 'El nombre es muy corto',
+      },
+    },
+    {
+      key: 'Field is required',
+      dict: {
+        ru: 'Обязательное поле',
+        es: 'Se requiere campo',
+      },
+    },
+    {
+      key: 'The field must contain a minimum of 3 characters',
+      dict: {
+        ru: 'Минимум 3 символа'
+        
+      },
+    },
+  ]
+);
+
+// apply rules to form fields
+validation
+.addField('#name', [
+  {
+    rule: 'required',
+    errorMessage: 'Введите имя',
+  },
+{
+  rule: 'minLength',
+  value: 3,
+  errorMessage: 'Минимум 3 символа'
+},
+{
+  rule: 'maxLength',
+  value: 30,
+  errorMessage: 'Максимум 30 символов'
+},
+])
+.addField('#email', [
+{
+  rule: 'required',
+  errorMessage: 'Введите email',
+},
+{
+  rule: 'email',
+  errorMessage: 'Неверный адрес электронной почты',
+},
+])
+.addField('#textarea', [
+  {
+    rule: 'required',
+    errorMessage: 'Заполните поле',
+  },
+]);
+
+
+
+
+
 const swiper = new Swiper(".swiper", {
  
   

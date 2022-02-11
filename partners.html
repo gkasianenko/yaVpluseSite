@@ -475,22 +475,22 @@
 									Почта: info@yavplse.ru</p>
 							</div>
 						</div>
-						<div class="footer-form__form">
+						<form class="footer-form__form" id="form">
 							<div class="footer-form__name">
 								<p>Как вас зовут</p>
-								<input type="text" placeholder="Введите имя и фамилию">
+								<input id="name" type="text" placeholder="Введите имя и фамилию">
 							</div>
 							<div class="footer-form__mail">
 								<p>Электронная почта</p>
-								<input type="text" placeholder="Введите ваш e-mail">
+								<input id="email" type="email" placeholder="Введите ваш e-mail">
 							</div>
 							<div class="footer-form__textarea">
 								<p>Опишите ваш запрос</p>
-								<textarea name="" id="" cols="30" rows="10" placeholder="Что вас интересует?"></textarea>
+								<textarea id="textarea" cols="30" rows="10" placeholder="Что вас интересует?"></textarea>
 							</div>
 							<button class="button button--rectangle" type="submit">Оставить заявку</button>
 							<p>Нажимая на кнопку, я соглашаюсь на <a href="#">обработку персональных данных</a> и с <a href="">правилами пользования Платформой</a></p>
-						</div>
+						</form>
 					</div>
 
 				</div>
@@ -606,6 +606,7 @@
 				</div>
 			</div>
 		</footer>
+		<script src="./libs/just-validate/dist/just-validate.production.min.js"></script>
 		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 		<script src="./js/main-partners.js"></script>
 	</body>
